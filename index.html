@@ -26,23 +26,27 @@
 
 <div id="header-back">
 	<div class="container header">
-		<div class="row">
+		<div class="row" id="header-top">
 			<div id="header-logo" class="span7">
-				<img id="header-logo-img" src="http://placehold.it/600x80/" />
+				<img id="header-logo-img" src="/img/logo-big.png" />
 			</div><!-- end div#header-logo -->
 			<div id="header-nav" class="span5">
-				<input type="search" role="search" placeholder="Search..." />
-				<ul id="header-nav-links">
-					<a href="#"><li>About the CPO</li></a>
-					<a href="#"><li>Contact us</li></a>
-					<a href="#"><li>FAQ</li></a>
-					<a href="#" class="header-nav-featured"><li>Apply to be an intern</li></a>
-				</ul>
+				<form class="input-append">
+					<input id="search" type="search" role="search" placeholder="Search..."
+					/><submit class="btn"><i class="icon-search"></i></submit>
+				</form>
 			</div>
+			<ul id="header-nav-links" class="span12">
+				<a href="#"><li>About the CPO</li></a>
+				<a href="#"><li>Contact us</li></a>
+				<a href="#"><li>FAQ</li></a>
+				<a href="#" id="header-nav-featured"><li>Apply to be an intern</li></a>
+			</ul>
+
 		</div>
-		<div class="row">
+		<div class="row" id="header-bottom">
 			<div id="bighello" class="span12">
-				<span class="bighello-big">We're <strong>students</strong>, helping our <strong>community</strong>.</span>
+				<span class="bighello-big">We're <strong>students</strong>,<br />helping our <strong>community</strong>.</span>
 				<span class="bighello-describe">The CPO is made up of student-initiated, student-run projects that work for freedom and equality in our own communities. We focus on <strong>access</strong> to college, <strong>retention</strong> in college, and <strong>community service</strong> for college students.</span>
 				<button class="btn btn-large btn-pink" id="bighello-button">Get involved</button>
 			</div><!-- div#bighello -->
