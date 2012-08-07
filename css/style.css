@@ -1,10 +1,10 @@
 /* ===== Primary Styles ========================================================
-   Author:
+   Author: Byron Lutz
    ========================================================================== */
 * {
 	font-family:"Verdana";
 }
-h1 {
+h1, h2 {
 	font-family:"Museo500Regular";
 }
 
@@ -69,6 +69,7 @@ div#header-top {
 div#header-bottom {
 	border-top: 1px solid #66c8ee;
 	padding-top:20px;
+    position: relative;
 }
 
 ul#header-nav-links {
@@ -103,13 +104,14 @@ a#header-nav-featured {
 	color:#fff000;
 }
 
-span.bighello-big {
+.bighello-big {
     font-family: 'Museo500Regular';
     color: white;
     font-size: 4.3em;
     line-height: 1em;
     display: block;
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 17px;
 }
 span.bighello-big strong {
     font-family: 'Museo500Regular';
@@ -119,4 +121,91 @@ span.bighello-big strong {
 }
 #header-nav form {
     padding-top: 30px;
+}
+.bighello-describe {
+	color:white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    font-family: "Museo300Regular";
+    font-size: 1.2em;
+    line-height: 21px;
+}
+.bighello-describe strong {
+	font-family:"Museo700Regular";
+}
+#bighello-button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size:1.7em;
+    padding:13px 23px;
+    font-weight:bold;
+}
+.btn-pink {
+	border-radius:0;
+	border:1px solid #183042;
+	color:white;
+	text-shadow:0px 1px 1px black;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+
+	background: rgb(232,47,152); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(232,47,152,1) 0%, rgba(176,43,117,1) 97%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,47,152,1)), color-stop(97%,rgba(176,43,117,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e82f98', endColorstr='#b02b75',GradientType=0 ); /* IE6-9 */
+
+}
+
+.btn-pink:hover {
+	background: rgb(206,45,136); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(206,45,136,1) 0%, rgba(175,43,118,1) 45%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,45,136,1)), color-stop(45%,rgba(175,43,118,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce2d88', endColorstr='#af2b76',GradientType=0 ); /* IE6-9 */
+}
+.btn-pink:active {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5) inset;
+}
+
+#latest-container {
+	background-color:#1A3548;
+	background-image:url('/img/bighead-back.png');
+	background-position:top;
+	background-repeat:repeat-x;
+}
+#bighello-skyline {
+	position:absolute;
+	right:0;
+    bottom: -24px;
+}
+.latest {
+	z-index:1;
+    position: relative;
+    padding-top: 21px;
+    color:white;
+    margin-bottom:25px;
+}
+.latest a {
+	color:#fbf03b;
+}
+.latest-rotator-image {
+    float: left;
+    display: block;
+    margin-right: 15px;
+    margin-bottom:-20px;
+    border:1px solid #b9b9b9;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+.latest-rotator-item-text {
+    padding-top: 20px;
+}
+.latest-rotator-item-text h1 {
+	margin-bottom:2px;
+	font-size:1.8em;
+	font-family:"Museo700Regular";
 }
