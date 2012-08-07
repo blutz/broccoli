@@ -24,6 +24,16 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=72296391616";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="header-back">
 	<div class="container header">
 		<div class="row" id="header-top">
@@ -70,11 +80,22 @@
 						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
 					</div><!-- div.latest-rotator-item-text -->
 				</div>
+				<ul id="latest-rotator-controls">
+					<li><a href="#">Prev</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#">Next</a></li>
+				</ul><!-- end div#latest-rotator-controls -->
 			</div><!-- end div#latest-rotator -->
-			<div id="latest-socialmedia" class="span3">
-				<h3>Latest Tweet</h3>
-				<p>The CPO Men's Retreat is this weekend! Contact Eder Gaona if you would like to attend for a couple days away from LA.</p>
-				<img src="http://placehold.it/100x20" />
+			<div id="latest-socialmedia-container" class="span3">
+				<div id="latest-socialmedia">
+					<h3>Latest Tweet</h3>
+					<p>The CPO Men's Retreat is this weekend! Contact Eder Gaona if you would like to attend for a couple days away from LA.</p>
+					<a href="https://twitter.com/uclacpo" class="twitter-follow-button" data-show-count="false">Follow @uclacpo</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
 			</div>
 		</div>
 	</div><!-- end div.latest -->
@@ -87,13 +108,13 @@
 			<p>Let's have a little blurb about the CPO as a whole. Perhaps include FITTED in here? Then talk about why it was founded, who runs it, and stuff like that. Don't use any inside terms (SIAC, SRC, ...) and no jargon.</p>
 			<p>Then talk about how students can get involved. Then they can click the button to volunteer or browse through our projects. Yay!</p>
 			<div id="pagebody-main-buttonset">
-				<button class="btn">Volunteer Now</button>
-				<button class="btn">Access the Test Bank</button>
-				<button class="btn">Get a Peer Mentor</button>
+				<button class="btn-main">Volunteer Now</button>
+				<button class="btn-main">Access the Test Bank</button>
+				<button class="btn-main">Get a Peer Mentor</button>
 			</div>
 		<div id="pagebody-main-tabs">
 			<ul class="nav nav-tabs">
-			   <li><a href="#access" data-toggle="tab">Access</a></li>
+			   <li class="active"><a href="#access" data-toggle="tab">Access</a></li>
 			   <li><a href="#retention" data-toggle="tab">Retention</a></li>
 			   <li><a href="#service" data-toggle="tab">Service</a></li>
 			   <li><a href="#risk" data-toggle="tab">Risk management</a></li>
@@ -120,101 +141,104 @@
 		</div>
 		</div><!-- end div#pagebody-main -->
 		<div id="pagebody-side" class="span4">
+			<div class="fb-like-box" data-href="http://www.facebook.com/uclacpo" data-width="300" data-show-faces="true" data-stream="true" data-header="true"></div>
 			<!-- insert facebook code here! -->
 		</div><!-- end div#pagebody-side -->
 	</div>
 </div><!-- end div.pagebody -->
 
-<div class="container footer">
-	<div class="row">
-		<div class="span3">
-			<h1>CPOSA <span>(Service)</span></h1>
-			<h2>Education caucus</h2>
+<div id="footer-container">
+	<div class="container footer">
+		<div class="row">
+			<div class="span3">
+				<h1>CPOSA <span>(Service)</span></h1>
+				<h2>Education caucus</h2>
+					<ul>
+						<a href="#"><li>4Real Hop									</li></a>
+						<a href="#"><li>Adelante Tutorial Project					</li></a>
+						<a href="#"><li>Advancing Careers in Engineering and Science</li></a>
+						<a href="#"><li>African Education Project					</li></a>
+						<a href="#"><li>Barrio Youth Alternatives Project			</li></a>
+						<a href="#"><li>Latina Guiding Latinas						</li></a>
+						<a href="#"><li>Projecting Minds							</li></a>
+						<a href="#"><li>SANAA										</li></a>
+					</ul>
+				<h2>Health caucus</h2>
+					<ul>
+						<a href="#"><li>Asian Pacific Health Corps	 </a></li>
+						<a href="#"><li>Black Hypertension Project	 </a></li>
+						<a href="#"><li>Black Latino Aids Project	 </a></li>
+						<a href="#"><li>Dental Education Outreach	 </a></li>
+						<a href="#"><li>Dot Org						 </a></li>
+						<a href="#"><li>Inglewood Clinic Group		 </a></li>
+						<a href="#"><li>Latino Student Health Project</a></li>
+						<a href="#"><li>UMMA Volunteer Program		 </a></li>
+					</ul>
+			</div><!-- end div.span3 -->
+			<div class="span3">
+				<h2>Social justice</h2>
+					<ul>
+						<a href="#"><li>Improving Dreams Equality, Access, and Success / AB540</li></a>
+						<a href="#"><li>IMHOME												  </li></a>
+						<a href="#"><li>Incarcerated Youth Tutorial Project					  </li></a>
+						<a href="#"><li>Project 1											  </li></a>
+						<a href="#"><li>Proyecto De Jornaleros								  </li></a>
+						<a href="#"><li>RAZA Youth Empowerment Project						  </li></a>
+						<a href="#"><li>Projecting Minds									  </li></a>
+					</ul>
+				<h1>SIAC <span>(Access)</span></h1>
+					<ul>
+						<a href="#"><li>American Indian Recruitment								   </li></a>
+						<a href="#"><li>Higher Opportunity Program for Education				   </li></a>
+						<a href="#"><li>MEChA Xinatchli											   </li></a>
+						<a href="#"><li>Mentors for Academic And Peer Support					   </li></a>
+						<a href="#"><li>Pacific Islander Education and Retention				   </li></a>
+						<a href="#"><li>Samahang Pilipino Advancing Community Empowerment		   </li></a>
+						<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
+					</ul>
+			</div><!-- end div.span3 -->
+			<div class="span3">
+				<h1>SRC <span>(Retention)</span></h1>
 				<ul>
-					<a href="#"><li>4Real Hop									</li></a>
-					<a href="#"><li>Adelante Tutorial Project					</li></a>
-					<a href="#"><li>Advancing Careers in Engineering and Science</li></a>
-					<a href="#"><li>African Education Project					</li></a>
-					<a href="#"><li>Barrio Youth Alternatives Project			</li></a>
-					<a href="#"><li>Latina Guiding Latinas						</li></a>
-					<a href="#"><li>Projecting Minds							</li></a>
-					<a href="#"><li>SANAA										</li></a>
+					<a href="#"><li>Academic supports program							   </li></a>
+					<a href="#"><li>MEChA Calmecac										   </li></a>
+					<a href="#"><li>Retention of American Indians Now!					   </li></a>
+					<a href="#"><li>Southeast Asian Campus Learning Education and Retention</li></a>
+					<a href="#"><li>Samahang Pilipino Education and Retention			   </li></a>
+					<a href="#"><li>Writing Success Program								   </li></a>
 				</ul>
-			<h2>Health caucus</h2>
+				<h1>CPO</h1>
 				<ul>
-					<a href="#"><li>Asian Pacific Health Corps	 </a></li>
-					<a href="#"><li>Black Hypertension Project	 </a></li>
-					<a href="#"><li>Black Latino Aids Project	 </a></li>
-					<a href="#"><li>Dental Education Outreach	 </a></li>
-					<a href="#"><li>Dot Org						 </a></li>
-					<a href="#"><li>Inglewood Clinic Group		 </a></li>
-					<a href="#"><li>Latino Student Health Project</a></li>
-					<a href="#"><li>UMMA Volunteer Program		 </a></li>
+					<a href="#"><li>Contact us			 </li></a>
+					<a href="#"><li>FAQ					 </li></a>
+					<a href="#"><li>Apply to be an intern</li></a>
+					<li class="seperator"></li>
+					<a href="#"><li>Facebook</li></a>
+					<a href="#"><li>Twitter</li></a>
 				</ul>
-		</div><!-- end div.span3 -->
-		<div class="span3">
-			<h2>Social justice</h2>
-				<ul>
-					<a href="#"><li>Improving Dreams Equality, Access, and Success / AB540</li></a>
-					<a href="#"><li>IMHOME												  </li></a>
-					<a href="#"><li>Incarcerated Youth Tutorial Project					  </li></a>
-					<a href="#"><li>Project 1											  </li></a>
-					<a href="#"><li>Proyecto De Jornaleros								  </li></a>
-					<a href="#"><li>RAZA Youth Empowerment Project						  </li></a>
-					<a href="#"><li>Projecting Minds									  </li></a>
-				</ul>
-			<h1>SIAC <span>(Access)</span></h1>
-				<ul>
-					<a href="#"><li>American Indian Recruitment								   </li></a>
-					<a href="#"><li>Higher Opportunity Program for Education				   </li></a>
-					<a href="#"><li>MEChA Xinatchli											   </li></a>
-					<a href="#"><li>Mentors for Academic And Peer Support					   </li></a>
-					<a href="#"><li>Pacific Islander Education and Retention				   </li></a>
-					<a href="#"><li>Samahang Pilipino Advancing Community Empowerment		   </li></a>
-					<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
-				</ul>
-		</div><!-- end div.span3 -->
-		<div class="span3">
-			<h1>SRC <span>(Retention)</span></h1>
-			<ul>
-				<a href="#"><li>Academic supports program							   </li></a>
-				<a href="#"><li>MEChA Calmecac										   </li></a>
-				<a href="#"><li>Retention of American Indians Now!					   </li></a>
-				<a href="#"><li>Southeast Asian Campus Learning Education and Retention</li></a>
-				<a href="#"><li>Samahang Pilipino Education and Retention			   </li></a>
-				<a href="#"><li>Writing Success Program								   </li></a>
-			</ul>
-			<h1>CPO</h1>
-			<ul>
-				<a href="#"><li>Contact us			 </li></a>
-				<a href="#"><li>FAQ					 </li></a>
-				<a href="#"><li>Apply to be an intern</li></a>
-				<li class="seperator"></li>
-				<a href="#"><li>Facebook</li></a>
-				<a href="#"><li>Twitter</li></a>
-			</ul>
-		</div><!-- end div.span3 -->
-		<div class="span3" id="footer-contact">
-			<h3>Mail</h3>
-			<p>Student Activities Center<br />
-			220 Westwood Plaza, Suite 105<br />
-			Los Angeles, CA 90095<br />
-			Mailing Code: 145406</p>
-			
-			<h3>Call</h3>
-			<p>(310) 825-5969</p>
-			
-			<h3>Visit</h3>
-			<p>Student Activities Center</p>
-			
-			<h3>Email</h3>
-			<p><a href="#">info@cpo.ucla.edu</a></p>
-			
-			<img src="http://placehold.it/200x50" />
-			<p class="copyright">Content &copy; 2012 UCLA Community Programs Office Department.<br />All rights reserved.</p>
+			</div><!-- end div.span3 -->
+			<div class="span3" id="footer-contact">
+				<h3>Mail</h3>
+				<p>Student Activities Center<br />
+				220 Westwood Plaza, Suite 105<br />
+				Los Angeles, CA 90095<br />
+				Mailing Code: 145406</p>
+				
+				<h3>Call</h3>
+				<p>(310) 825-5969</p>
+				
+				<h3>Visit</h3>
+				<p>Student Activities Center</p>
+				
+				<h3>Email</h3>
+				<p><a href="#">info@cpo.ucla.edu</a></p>
+				
+				<img src="/img/logo-white.png" id="bottomlogo" />
+				<p class="copyright">Content &copy; 2012 UCLA Community Programs Office Department.<br />All rights reserved.</p>
+			</div>
 		</div>
-	</div>
-</div><!-- end div.footer -->
+	</div><!-- end div.footer -->
+</div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
