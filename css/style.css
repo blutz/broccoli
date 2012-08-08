@@ -282,14 +282,56 @@ span.bighello-big strong {
 #latest-rotator-controls a {
 	display:block;
 }
-#latest-rotator-controls li:first-child a {
+#latest-rotator-controls-prev {
 	background-image:url('/img/slideshow-controls.png');
 	width:11px;
 	background-repeat:no-repeat;
-	margin-left:10px;
+	margin-left:7px;
 	margin-right:50px;
+    padding-top: 17px;
+}
+#latest-rotator-controls-next {
+	background-image:url('/img/slideshow-controls.png');
+	width:11px;
+	background-position-x:-12px;
+	background-repeat:no-repeat;
+	margin-left:11px;
+	margin-right:50px;
+    padding-top: 17px;
 }
 
+#latest-rotator-controls li a {
+	height:9px;
+	width:9px;
+	background-position-x:-25px;
+	display:block;
+	background-image:url('/img/slideshow-controls.png');
+	margin-right:9px;
+	margin-top:3px;
+}
+
+#latest-rotator-controls li:first-child a , #latest-rotator-controls li:last-child a {
+	background-image:none;
+	width:36px;
+	text-align:center;
+	margin-right:0;
+	margin-top:0;
+    opacity:1;
+}
+#latest-rotator-controls li:first-child , #latest-rotator-controls li:last-child {
+	opacity:1;
+}
+
+#latest-rotator-controls li {
+	opacity:0.3;
+}
+
+#latest-rotator-controls li:hover {
+	opacity:1;
+}
+li#rotator-current {
+	opacity:1;
+}
 
 
 /* ===== Body styles (front) ======================================================== */
