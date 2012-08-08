@@ -144,6 +144,11 @@ a#header-nav-featured {
 	color:#fff000;
 }
 
+#bighello .row {
+    position: relative;
+    z-index: 1;
+}
+
 .bighello-big {
     font-family: 'Museo500Regular';
     color: white;
@@ -268,6 +273,9 @@ span.bighello-big strong {
 	list-style:none;
 	margin:0;
 	padding:0;
+    position: absolute;
+    right: 51px;
+    bottom: 70px;
 }
 #latest-rotator-controls a {
 	color:white;
@@ -331,6 +339,9 @@ span.bighello-big strong {
 }
 li#rotator-current {
 	opacity:1;
+}
+#latest-rotator {
+	position:relative;
 }
 
 
@@ -486,4 +497,45 @@ p.copyright {
     line-height: 1.1em;
     padding-top: 10px;
     font-size: 0.8em;
+}
+
+
+/* ===== RESPONSIVE STYLES ======================================================== */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#bighello-skyline {
+		width:57%;
+	}
+	
+	#latest-socialmedia-container {
+	    margin-top: 19px;
+	    margin-bottom: 12px;
+	}
+	.btn-main {
+		text-transform:none;
+		padding:10px;
+		height:58px;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+	#latest-rotator-item1 {
+		padding-left:30px;
+	}
+	#latest-rotator-controls {
+		right:118px
+	}
+	.btn-main {
+		height:58px;
+	}
 }
