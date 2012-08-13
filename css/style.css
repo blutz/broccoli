@@ -437,6 +437,15 @@ ul#access-projectlist a {
 ul#access-projectlist a:last-child {
 	border-bottom:0;
 }
+.btn-collapse {
+    text-transform: none;
+    width: 100%;
+    padding: 5px;
+}
+.btn-collapse b {
+    position: relative;
+    top: 7px;
+}
 
 
 
@@ -504,6 +513,15 @@ p.copyright {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	.fb-like-box {
+		width:100%;
+	}
+	.fb-like-box > span {
+		width:100% !important;
+	}
+	.fb-like-box > span > iframe {
+		width:100%;
+	}
 }
 
 /* Landscape phone to portrait tablet */
@@ -568,6 +586,23 @@ p.copyright {
 	}
 	ul#access-projectlist {
 		width:99%;
+	}
+	.access-collapse {
+		border-radius:0;
+		padding:0;
+	}
+	#footer-container {
+	    margin-left: -20px;
+	    margin-right: -20px;
+	    padding: 10px;
+	}
+	#latest-socialmedia {
+		clear: both;
+   	}
+   	#bottomlogo {
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
 	}
 }
 
