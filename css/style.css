@@ -508,6 +508,67 @@ p.copyright {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+	#header-back, #latest-container {
+	    margin-left: -20px;
+	    margin-right: -20px;
+	    padding: 20px;
+	}
+	#dropdown-nav {
+    	margin-top: 25px;
+	}
+	#mobile-dropdown {
+    	font-size: 1.2em;
+	}
+	#mobile-dropdown a {
+	    padding: 14px 15px;
+    	border-bottom: 1px solid #dbdbdb;
+	}
+	#mobile-dropdown a:last-child {
+		border-bottom:none;
+		color:#333;
+		font-weight:normal;
+	}
+	div.header {
+		padding-top:0;
+	}
+	#header-nav {
+	    position: relative;
+	    z-index: 1;
+	}
+	.bighello-big {
+		font-size:2.5em;
+	}
+	#bighello-button {
+		width:100%;
+	}
+	#bighello-skyline {
+		bottom:-93px;
+	}
+	#header-back {
+	    padding-bottom: 75px;
+	}
+	.latest-rotator-image {
+	    margin-bottom: 5px;
+	}
+	#latest-rotator-controls {
+	    position: static;
+	    display: block;
+	    height: 30px;
+	    margin: 15px 0 35px 0;
+	}
+	.container.latest {
+		margin-bottom:0;
+	}
+	#latest-container {
+		margin-bottom:10px;
+	}
+	#pagebody-main-buttonset button {
+	    width: 100%;
+	    margin-bottom: 13px;
+	}
+	ul#access-projectlist {
+		width:99%;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
