@@ -1,66 +1,512 @@
-/* =============================================================================
-   Base
+/* ===== Primary Styles ========================================================
+   Author: Byron Lutz
    ========================================================================== */
+* {
+	font-family:"Verdana";
+}
+h1, h2 {
+	font-family:"Museo500Regular";
+}
+a {
+	color:#00adef;
+}
+a:visited {
+	color:#183042;
+}
+	
 
-body { }
+/* ===== Fonts ======================================================== */
+
+@font-face {
+    font-family: 'Museo300Regular';
+    src: url('museo300-regular-webfont.eot');
+    src: url('museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo300-regular-webfont.woff') format('woff'),
+         url('museo300-regular-webfont.ttf') format('truetype'),
+         url('museo300-regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Museo500Regular';
+    src: url('museo500-regular-webfont.eot');
+    src: url('museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo500-regular-webfont.woff') format('woff'),
+         url('museo500-regular-webfont.ttf') format('truetype'),
+         url('museo500-regular-webfont.svg#Museo500Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Museo700Regular';
+    src: url('museo700-regular-webfont.eot');
+    src: url('museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo700-regular-webfont.woff') format('woff'),
+         url('museo700-regular-webfont.ttf') format('truetype'),
+         url('museo700-regular-webfont.svg#Museo700Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ===== Custom icons ======================================================== */
+
+[class^="cpoicon-"],
+[class*=" cpoicon-"] {
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("/img/committee-icons.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+[class^="icon-"]:last-child,
+[class*=" icon-"]:last-child {
+  *margin-left: 0;
+}
+
+.cpoicon-access {
+	background-position:0px;
+}
+.cpoicon-retention {
+	background-position:-23px;
+}
+.cpoicon-service {
+	background-position:-46px;
+}
+.cpoicon-risk {
+	background-position:-69px;
+}
+
+
+/* ===== Header ======================================================== */
+
+#header-back {
+	background: rgb(0,170,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,170,238,1) 0%, rgba(0,118,162,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,170,238,1)), color-stop(100%,rgba(0,118,162,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,170,238,1) 0%,rgba(0,118,162,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,170,238,1) 0%,rgba(0,118,162,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,170,238,1) 0%,rgba(0,118,162,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,170,238,1) 0%,rgba(0,118,162,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aaee', endColorstr='#0076a2',GradientType=0 ); /* IE6-9 */
+}
+
+div.header {
+	padding-top:15px;
+}
+
+div#header-top {
+	border-bottom: 1px solid #0a76a4;
+	padding-bottom:10px;
+}
+div#header-bottom {
+	border-top: 1px solid #66c8ee;
+	padding-top:20px;
+    position: relative;
+}
+
+ul#header-nav-links {
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:block;
+	float:right;
+	clear:both;
+	padding-top:6px;
+	text-align:right;
+}
+
+ul#header-nav-links li {
+	display:inline;
+	padding-left:10px;
+	text-align:right;
+}
+
+#header-nav-links a {
+	color:#183042;
+}
+ul#header-nav-links li:hover {
+	text-decoration:underline;
+}
+
+.input-append {
+	float:right;
+}
+a#header-nav-featured {
+	font-weight:bold;
+	color:#fff000;
+}
+
+#bighello .row {
+    position: relative;
+    z-index: 1;
+}
+
+.bighello-big {
+    font-family: 'Museo500Regular';
+    color: white;
+    font-size: 4.3em;
+    line-height: 1em;
+    display: block;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 17px;
+}
+span.bighello-big strong {
+    font-family: 'Museo500Regular';
+}
+#search {
+	top:-1px;
+}
+#header-nav form {
+    padding-top: 30px;
+}
+.bighello-describe {
+	color:white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    font-family: "Museo300Regular";
+    font-size: 1.2em;
+    line-height: 21px;
+}
+.bighello-describe strong {
+	font-family:"Museo700Regular";
+}
+#bighello-button {
+    display: block;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size:1.7em;
+    padding:13px 23px;
+    font-weight:bold;
+}
+.btn-pink {
+	border-radius:0;
+	border:1px solid #183042;
+	color:white;
+	text-shadow:0px 1px 1px black;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+
+	background: rgb(232,47,152); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(232,47,152,1) 0%, rgba(176,43,117,1) 97%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,47,152,1)), color-stop(97%,rgba(176,43,117,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(232,47,152,1) 0%,rgba(176,43,117,1) 97%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e82f98', endColorstr='#b02b75',GradientType=0 ); /* IE6-9 */
+
+}
+
+.btn-pink:hover {
+	background: rgb(206,45,136); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(206,45,136,1) 0%, rgba(175,43,118,1) 45%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,45,136,1)), color-stop(45%,rgba(175,43,118,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(206,45,136,1) 0%,rgba(175,43,118,1) 45%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce2d88', endColorstr='#af2b76',GradientType=0 ); /* IE6-9 */
+}
+.btn-pink:active, .btn-main:active {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5) inset;
+}
+
+#latest-container {
+	background-color:#1A3548;
+	background-image:url('/img/bighead-back.png');
+	background-position:top;
+	background-repeat:repeat-x;
+}
+#bighello-skyline {
+	position:absolute;
+	right:0;
+    bottom: -24px;
+}
+.latest {
+	z-index:1;
+    position: relative;
+    padding-top: 21px;
+    color:white;
+    margin-bottom:40px;
+}
+.latest a {
+	color:#fbf03b;
+}
+.latest-rotator-image {
+    float: left;
+    display: block;
+    margin-right: 15px;
+    margin-bottom:-20px;
+    border:1px solid #b9b9b9;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+.latest-rotator-item-text {
+    padding-top: 20px;
+}
+.latest-rotator-item-text h1 {
+	margin-bottom:2px;
+	font-size:1.8em;
+	font-family:"Museo700Regular";
+}
+
+#latest-socialmedia {
+	margin-top:10px;
+	padding:10px 20px;
+	background-color:#122330;
+	border:1px solid #1f435e;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 5px;
+}
+
+#latest-socialmedia h3 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+#latest-rotator-controls {
+	list-style:none;
+	margin:0;
+	padding:0;
+    position: absolute;
+    right: 51px;
+    bottom: 70px;
+}
+#latest-rotator-controls a {
+	color:white;
+}
+#latest-rotator-controls a:hover {
+	text-decoration:none;
+}
+#latest-rotator-controls li {
+	display:block;
+	float:left;
+}
+#latest-rotator-controls a {
+	display:block;
+}
+#latest-rotator-controls-prev {
+	background-image:url('/img/slideshow-controls.png');
+	width:11px;
+	background-repeat:no-repeat;
+	margin-left:7px;
+	margin-right:50px;
+    padding-top: 17px;
+}
+#latest-rotator-controls-next {
+	background-image:url('/img/slideshow-controls.png');
+	width:11px;
+	background-position-x:-12px;
+	background-repeat:no-repeat;
+	margin-left:11px;
+	margin-right:50px;
+    padding-top: 17px;
+}
+
+#latest-rotator-controls li a {
+	height:9px;
+	width:9px;
+	background-position-x:-25px;
+	display:block;
+	background-image:url('/img/slideshow-controls.png');
+	margin-right:9px;
+	margin-top:3px;
+}
+
+#latest-rotator-controls li:first-child a , #latest-rotator-controls li:last-child a {
+	background-image:none;
+	width:36px;
+	text-align:center;
+	margin-right:0;
+	margin-top:0;
+    opacity:1;
+}
+#latest-rotator-controls li:first-child , #latest-rotator-controls li:last-child {
+	opacity:1;
+}
+
+#latest-rotator-controls li {
+	opacity:0.3;
+}
+
+#latest-rotator-controls li:hover {
+	opacity:1;
+}
+li#rotator-current {
+	opacity:1;
+}
+#latest-rotator {
+	position:relative;
+}
+
+
+/* ===== Body styles (front) ======================================================== */
+
+#pagebody-main-buttonset {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.btn-main {
+	border:1px solid #aaaaaa;
+	text-transform:uppercase;
+	color:#183042;
+	font-weight:bold;
+	width:30%;
+	padding:10px 40px;
+	font-size:1.1em;
+	text-shadow:0px 1px 1px rgba(255,255,255,0.1);
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+
+	background: rgb(245,246,247); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(245,246,247,1) 0%, rgba(206,211,214,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,247,1)), color-stop(100%,rgba(206,211,214,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(245,246,247,1) 0%,rgba(206,211,214,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(245,246,247,1) 0%,rgba(206,211,214,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(245,246,247,1) 0%,rgba(206,211,214,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(245,246,247,1) 0%,rgba(206,211,214,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f7', endColorstr='#ced3d6',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-main:hover {
+	background: rgb(227,230,231); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(227,230,231,1) 0%, rgba(206,211,214,1) 61%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(227,230,231,1)), color-stop(61%,rgba(206,211,214,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e6e7', endColorstr='#ced3d6',GradientType=0 ); /* IE6-9 */
+}
+
+/* ===== Tabs (front) ======================================================== */
+
+ul.nav li a {
+	font-size:1.1em;
+	color:#333;
+}
+
+ul.nav li.active a {
+	background: rgb(244,247,246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(244,247,246,1) 0%, rgba(255,255,255,1) 63%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,247,246,1)), color-stop(63%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(244,247,246,1) 0%,rgba(255,255,255,1) 63%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(244,247,246,1) 0%,rgba(255,255,255,1) 63%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(244,247,246,1) 0%,rgba(255,255,255,1) 63%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(244,247,246,1) 0%,rgba(255,255,255,1) 63%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f7f6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+	border-bottom:1px solid white;
+}
+
+
+#pagebody-main-tabs ul {
+    margin-bottom: 10px;
+}
+
+.tab-content h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom:13px;
+}
+
+ul#access-projectlist {
+    list-style: none;
+    margin: 0;
+    width: 40%;
+    float: right;
+    border: 1px solid #dbdbdb;
+    padding: 4px 0;
+    border-radius: 10px;
+    margin-left:10px;
+}
+
+ul#access-projectlist a {
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+    padding:4px 10px;
+}
+ul#access-projectlist a:last-child {
+	border-bottom:0;
+}
+.btn-collapse {
+    text-transform: none;
+    width: 100%;
+    padding: 5px;
+}
+.btn-collapse b {
+    position: relative;
+    top: 7px;
+}
 
 
 
-/* =============================================================================
-   Header
-   ========================================================================== */
+/* ===== Footer ======================================================== */
 
-#banner { }
+#footer-container {
+	background-color:black;
+	border-top:1px solid #a5a5a5;
+	padding-top:40px;
+	margin-top:20px;
+}
 
-/* Fixed Topbar Navigation */
-body.top-navbar { padding-top: 60px; }
-body.admin-bar .navbar-fixed-top { top: 28px; }
+#footer-container * {
+	color:#aaaaaa;
+}
+#footer-container h1, #footer-container h1 span, #footer-container h3 {
+	color:white;
+}
 
+#footer-container h1 {
+	font-size:1.3em;
+	font-family:"Museo700Regular"
+}
 
+#footer-container h1 span {
+	font-family:"Museo500Regular";
+}
+#footer-container h2 {
+	font-size:1em;
+	font-family:"Verdana";
+    line-height: 1.5em;
+    margin-top:10px;
+}
+#footer-container ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	margin-bottom:10px;
+}
+#footer-container ul li {
+	margin-bottom:5px;
+	line-height:1.2em;
+}
 
-/* =============================================================================
-   Content
-   ========================================================================== */
+#footer-container h3 {
+	text-transform:uppercase;
+	font-size:1em;
+	line-height:1em;
+	padding-top:10px;
+}
 
-#content { }
-
-
-
-/* =============================================================================
-   Primary Content
-   ========================================================================== */
-
-#main { }
-
-
-
-/* =============================================================================
-   Sidebar
-   ========================================================================== */
-
-#sidebar { }
-
-
-
-/* =============================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { }
-.hentry time { }
-.hentry p.byline { }
-.hentry .entry-content { }
-.hentry footer { }
-
-
-
-/* =============================================================================
-   Footer
-   ========================================================================== */
-
-#content-info { }
-
-
+#bottomlogo {
+	margin-top:20px;
+}
+p.copyright {
+    text-align: center;
+    font-style: italic;
+    line-height: 1.1em;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
 
 /* =============================================================================
    WordPress Generated Classes
@@ -74,13 +520,129 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 
 
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
+/* ===== RESPONSIVE STYLES ======================================================== */
 
-@media (max-width: 979px) {
-  /* Fix top padding when using the responsive grid with the fixed topbar */
-  body.top-navbar {
-    padding-top: 0;
-  }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.fb-like-box {
+		width:100%;
+	}
+	.fb-like-box > span {
+		width:100% !important;
+	}
+	.fb-like-box > span > iframe {
+		width:100%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#header-back, #latest-container {
+	    margin-left: -20px;
+	    margin-right: -20px;
+	    padding: 20px;
+	}
+	#dropdown-nav {
+    	margin-top: 25px;
+	}
+	#mobile-dropdown {
+    	font-size: 1.2em;
+	}
+	#mobile-dropdown a {
+	    padding: 14px 15px;
+    	border-bottom: 1px solid #dbdbdb;
+	}
+	#mobile-dropdown a:last-child {
+		border-bottom:none;
+		color:#333;
+		font-weight:normal;
+	}
+	div.header {
+		padding-top:0;
+	}
+	#header-nav {
+	    position: relative;
+	    z-index: 1;
+	}
+	.bighello-big {
+		font-size:2.5em;
+	}
+	#bighello-button {
+		width:100%;
+	}
+	#bighello-skyline {
+		bottom:-93px;
+	}
+	#header-back {
+	    padding-bottom: 75px;
+	}
+	.latest-rotator-image {
+	    margin-bottom: 5px;
+	}
+	#latest-rotator-controls {
+	    position: static;
+	    display: block;
+	    height: 30px;
+	    margin: 15px 0 35px 0;
+	}
+	.container.latest {
+		margin-bottom:0;
+	}
+	#latest-container {
+		margin-bottom:10px;
+	}
+	#pagebody-main-buttonset button {
+	    width: 100%;
+	    margin-bottom: 13px;
+	}
+	ul#access-projectlist {
+		width:99%;
+	}
+	.access-collapse {
+		border-radius:0;
+		padding:0;
+	}
+	#footer-container {
+	    margin-left: -20px;
+	    margin-right: -20px;
+	    padding: 10px;
+	}
+	#latest-socialmedia {
+		clear: both;
+   	}
+   	#bottomlogo {
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#bighello-skyline {
+		width:57%;
+	}
+	
+	#latest-socialmedia-container {
+	    margin-top: 19px;
+	    margin-bottom: 12px;
+	}
+	.btn-main {
+		text-transform:none;
+		padding:10px;
+		height:58px;
+	}
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+	#latest-rotator-item1 {
+		padding-left:30px;
+	}
+	#latest-rotator-controls {
+		right:118px
+	}
+	.btn-main {
+		height:58px;
+	}
 }

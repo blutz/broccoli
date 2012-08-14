@@ -22,17 +22,22 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=72296391616";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
   <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
 
-  <?php roots_header_before(); ?>
   <?php
-    if (current_theme_supports('bootstrap-top-navbar')) {
+  	if( is_front_page() )
+      get_template_part('templates/header', 'front');
+    else
       get_template_part('templates/header', 'top-navbar');
-    } else {
-      get_template_part('templates/header', 'default');
-    }
   ?>
-  <?php roots_header_after(); ?>
-
-  <?php roots_wrap_before(); ?>
-  <div id="wrap" class="<?php echo WRAP_CLASSES; ?>" role="document">
