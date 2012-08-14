@@ -2,14 +2,14 @@
 ##Preview
 For a preview, here are the mockups:
 
-* [Front page](http://blutz.bol.ucla.edu/etc/cpo-3.html)
+* [Front page](http://blutz.bol.ucla.edu/etc/cpo)
 * [Insside page (project page)](http://blutz.bol.ucla.edu/etc/cpo-4.html)
 
 ##Phases
 The project will operate in three distinct phases:
 
 1. Make mockups that represent the overall design of the site. **[complete]**
-2. Convert the mockups to responsive HTML/CSS.
+2. Convert the mockups to responsive HTML/CSS. **[complete]**
 3. Convert the responsive HTML/CSS to a Wordpress theme.
 
 Though this may not be the most efficient way (mobile-first, responsive wordpress design first?), I find that it forces you to spend more time with the design in a way that is easier than HTML/CSS. While designing in Photoshop one can temporarily ignore the limitations of HTML/CSS, being only concerned with user experience.
