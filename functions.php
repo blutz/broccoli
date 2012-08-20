@@ -16,6 +16,7 @@ require_once locate_template('/inc/hooks.php');           // Hooks
 require_once locate_template('/inc/actions.php');         // Actions
 require_once locate_template('/inc/widgets.php');         // Sidebars and widgets
 require_once locate_template('/inc/custom.php');          // Custom functions
+require_once locate_template('/inc/front-page.php');	  // Front page customization plugin
 
 function roots_setup() {
 
