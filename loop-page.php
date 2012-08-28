@@ -14,7 +14,7 @@
 			    <?php
  					$facebook_page_url = get_post_meta($post->ID, 'facebook_page_url', true);
 					if($facebook_page_url != "") : ?>
-					    <div class="fb-like-box" data-href="<?php echo $facebook_page_url; ?>" data-width="460" data-height="400" data-show-faces="true" data-stream="true" data-header="true"></div>
+					    <div class="fb-like-box" data-href="<?php echo $facebook_page_url; ?>" data-width="300" data-height="400" data-show-faces="true" data-stream="true" data-header="true"></div>
 			    <?php endif; ?>
 			      <?php the_content(); ?>
 			</div><!-- end div#project-content -->

@@ -20,6 +20,8 @@ a {
 a:visited {
 	color:#183042;
 }
+
+.fb-like-box, .fb-like-box iframe[style], .fb-like-box span[style] {width: 100% !important;}
 	
 
 /* ===== Fonts ======================================================== */
