@@ -189,6 +189,10 @@ a#header-nav-featured, a#header-nav-featured li {
 	font-weight:bold;
 	color:#fff000;
 }
+.dropdown-menu a#header-nav-featured li {
+	color:#333;
+	font-weight:bold;
+}
 
 #bighello .row {
     position: relative;
@@ -232,6 +236,9 @@ span.bighello-big strong {
     font-weight:bold;
 }
 .btn-pink {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
 	border-radius:0;
 	border:1px solid #183042;
 	color:white;
@@ -400,11 +407,10 @@ li#rotator-current {
 
 .btn-main {
 	border:1px solid #aaaaaa;
-	text-transform:uppercase;
 	color:#183042;
 	font-weight:bold;
 	width:30%;
-	padding:10px 40px;
+	padding:10px;
 	font-size:1.1em;
 	text-shadow:0px 1px 1px rgba(255,255,255,0.1);
 	box-shadow:0 1px 1px rgba(0,0,0,0.2);
@@ -428,6 +434,10 @@ li#rotator-current {
 	background: -ms-linear-gradient(top,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(227,230,231,1) 0%,rgba(206,211,214,1) 61%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e6e7', endColorstr='#ced3d6',GradientType=0 ); /* IE6-9 */
+}
+#pagebody-main-buttonset button {
+	text-transform: uppercase;
+	padding: 10px 40px;
 }
 
 /* ===== Tabs (front) ======================================================== */
@@ -569,6 +579,13 @@ p.copyright {
 .project-menu-menu > li {
 	border-bottom:1px solid #dbdbdb;
 }
+.project-menu-menu > li:hover {
+}
+.project-menu-menu > li > a:hover {
+	text-decoration:none;
+    background-color: rgba(0,174,229,0.1);
+}
+
 .project-menu-menu > li > a{
 	display:block;
 	padding:10px 20px;
@@ -607,6 +624,7 @@ p.copyright {
     line-height: 1.3em;
     display:block;
     padding: 0 10px;
+    margin-bottom:15px;
 }
 #project-side {
     text-align: right;
@@ -619,6 +637,7 @@ p.copyright {
 }
 .project-header {
 	padding-bottom: 17px;
+	padding-top:10px;
 }
 .photocaption {
     margin-bottom: 15px;
@@ -631,6 +650,39 @@ p.copyright {
 .sidebar-part {
 	display:block;
 	margin-bottom:15px;
+}
+#project-inside p {
+	font-size:14px;
+	line-height:21px;
+}
+#project-inside h2 {
+	font-size: 20px;
+	line-height: 32px;
+	clear:both;
+	display: block;
+	padding-top: 16px;
+}
+#project-inside h3 {
+    font-family: 'Verdana';
+    font-size: 1.3em;
+    opacity: 0.7;
+    line-height: 2em;
+}
+.counselor-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display:block;
+}
+.counselor-list li {
+	width:30%;
+	padding-right:5px;
+	float:left;
+}
+
+.project-menu-menu > li i {
+	float:right;
 }
 
 /* =============================================================================
@@ -739,6 +791,16 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	    margin-left: auto;
 	    margin-right: auto;
 	    display: block;
+	}
+	#header-menu {
+		display:none;
+	}
+	#header-back.inside {
+		padding-bottom:0;
+	    padding-top: 5px;
+	}
+	#header-logo {
+	    margin-bottom: -15px;
 	}
 }
 
