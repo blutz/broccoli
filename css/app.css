@@ -320,6 +320,7 @@ span.bighello-big strong {
 #latest-socialmedia h3 {
     text-transform: uppercase;
     font-size: 1.1em;
+    font-family:"Verdana";
 }
 
 #latest-rotator-controls {
@@ -551,6 +552,7 @@ ul#access-projectlist a:last-child {
 	font-size:1em;
 	line-height:1em;
 	padding-top:10px;
+	font-family:"Verdana";
 }
 
 #bottomlogo {

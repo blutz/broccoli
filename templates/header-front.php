@@ -2,7 +2,7 @@
 	<div class="container header">
 		<div class="row" id="header-top">
 			<div id="header-logo" class="span7">
-				<img id="header-logo-img" src="/img/logo-big.png" />
+				<a href="<?php echo site_url(); ?>"><img id="header-logo-img" src="/img/logo-big.png" /></a>
 			</div><!-- end div#header-logo -->
 			<div id="header-nav" class="span5">
 				<form class="input-append">

@@ -52,7 +52,7 @@
 				<?php
 					$staff = get_post_meta($post->ID, 'staff', true);
 					if ($staff != "") : ?>
-						<div class="sidebar-part">
+						<div class="sidebar-part hidden-phone">
 							<h3>Staff</h3>
 							<?php echo $staff; ?>
 						</div><!-- end div.sidebar-part -->
@@ -60,7 +60,7 @@
 				<?php
 					$sidebar = get_post_meta($post->ID, 'sidebar', true);
 					if ($sidebar != "") : ?>
-						<div class="sidebar-part">
+						<div class="sidebar-part hidden-phone">
 							<?php echo $sidebar; ?>
 						</div><!-- end div.sidebar-part -->
 				<?php endif; ?>
