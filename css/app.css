@@ -4,8 +4,15 @@
 * {
 	font-family:"Verdana";
 }
+h1, .page-header h1 {
+    line-height: 1.4em;
+}
 h1, h2 {
 	font-family:"Museo500Regular";
+}
+h3 {
+	font-family:"Museo300Regular";
+	font-size:1.5em;
 }
 a {
 	color:#00adef;
@@ -98,6 +105,20 @@ a:visited {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aaee', endColorstr='#0076a2',GradientType=0 ); /* IE6-9 */
 }
 
+#header-back.inside {
+	border-bottom: 1px solid #218EB0;
+	outline:1px solid #B4C4CA;
+
+	background: rgb(0,179,235); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,179,235,1) 0%, rgba(0,118,157,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,179,235,1)), color-stop(100%,rgba(0,118,157,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,179,235,1) 0%,rgba(0,118,157,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,179,235,1) 0%,rgba(0,118,157,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,179,235,1) 0%,rgba(0,118,157,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,179,235,1) 0%,rgba(0,118,157,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b3eb', endColorstr='#00769d',GradientType=0 ); /* IE6-9 */
+}
+
 div.header {
 	padding-top:15px;
 }
@@ -105,6 +126,9 @@ div.header {
 div#header-top {
 	border-bottom: 1px solid #0a76a4;
 	padding-bottom:10px;
+}
+div#header-top.inside {
+	border-bottom:1px solid #006788;
 }
 div#header-bottom {
 	border-top: 1px solid #66c8ee;
@@ -129,6 +153,26 @@ ul#header-nav-links li {
 	text-align:right;
 }
 
+div#header-menu {
+	border-top: 1px solid #66c8ee;
+	text-align:left;
+	padding-top:10px;
+	padding-bottom:4px;
+}
+ul#header-inside-nav-links {
+	list-style:none;
+	display:block;
+	float:left;
+	clear:both;
+	text-align:left;
+}
+
+ul#header-inside-nav-links li {
+	display:inline;
+	color:white;
+	padding-right:19px;
+}
+
 #header-nav-links a {
 	color:#183042;
 }
@@ -139,7 +183,7 @@ ul#header-nav-links li:hover {
 .input-append {
 	float:right;
 }
-a#header-nav-featured {
+a#header-nav-featured, a#header-nav-featured li {
 	font-weight:bold;
 	color:#fff000;
 }
@@ -506,6 +550,85 @@ p.copyright {
     line-height: 1.1em;
     padding-top: 10px;
     font-size: 0.8em;
+}
+
+/* ===== Project pages ======================================================== */
+
+.project-menu-wrap {
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 0 0 5px 5px;
+}
+.project-menu-menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.project-menu-menu > li {
+	border-bottom:1px solid #dbdbdb;
+}
+.project-menu-menu > li > a{
+	display:block;
+	padding:10px 20px;
+}
+
+.project-menu-menu > li > a:first-child {
+	color:#333;
+	font-family:"Museo500Regular";
+	font-size: 1.5em;
+	display: block;
+}
+.project-menu-menu > li > ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.project-menu-menu > li > ul > a {
+	display:block;
+	color:#333;
+	display:block;
+	margin-bottom:2px;
+}
+.project-menu-menu > li > ul > a li {
+	padding:0px 20px;
+}
+.active-project {
+	background-color:#dbdbdb;
+}
+.wp-post-image {
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+.project-tagline {
+	font-family:"Museo300Regular";
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.3em;
+    display:block;
+    padding: 0 10px;
+}
+#project-side {
+    text-align: right;
+}
+.photocaption-above {
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.project-header {
+	padding-bottom: 17px;
+}
+.photocaption {
+    margin-bottom: 15px;
+    display: block;
+}
+#twitter-button {
+	display:block;
+	margin-bottom:15px;
+}
+.sidebar-part {
+	display:block;
+	margin-bottom:15px;
 }
 
 /* =============================================================================

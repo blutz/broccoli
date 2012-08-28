@@ -1,3 +1,1 @@
-<?php
-
-// Custom functions
+<?php 

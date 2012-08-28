@@ -2,6 +2,12 @@
 	Byron Lutz
 */
 
+/***** GET RID OF HARD IMAGE SIZES *****/
+$(document).ready(function() {
+	$('.wp-post-image').removeAttr('height').removeAttr('width');
+});
+
+/***** RESPONSIVE FIXES *****/
 $(document).ready(function() {
 	var width = $(window).width();
 	
@@ -20,3 +26,4 @@ $(document).ready(function() {
 		$('#latest-socialmedia-container').removeClass('span3').addClass('span12');
 	}
 });
+

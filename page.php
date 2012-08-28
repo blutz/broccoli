@@ -1,20 +1,39 @@
 <?php get_header(); ?>
-  <?php roots_content_before(); ?>
-    <div id="content" class="<?php echo CONTAINER_CLASSES; ?>">
-    <?php roots_main_before(); ?>
-      <div id="main" class="<?php echo MAIN_CLASSES; ?>" role="main">
-        <?php roots_loop_before(); ?>
-        <?php get_template_part('loop', 'page'); ?>
-        <?php roots_loop_after(); ?>
-      </div><!-- /#main -->
-    <?php roots_main_after(); ?>
-    <?php roots_sidebar_before(); ?>
-      <aside id="sidebar" class="<?php echo SIDEBAR_CLASSES; ?>" role="complementary">
-      <?php roots_sidebar_inside_before(); ?>
-        <?php get_sidebar(); ?>
-      <?php roots_sidebar_inside_after(); ?>
-      </aside><!-- /#sidebar -->
-    <?php roots_sidebar_after(); ?>
+    <div id="content" class="container">
+    	<div class="row">
+	    	<div id="project-menu" class="span3">
+	    		<div class="project-menu-wrap">
+	    			<ul class="project-menu-menu">
+	    				<li><a href="#">CPO</a>
+	    					<ul>
+		    					<a href="#"><li class="active-project">Test link</li></a>
+		    					<a href="#"><li>Test link</li></a>
+		    				</ul>
+	    				</li>
+	    				<li><a href="#">Service (CPOSA)</a>
+	    					<ul>
+		    					<a href="#"><li>Test link</li></a>
+		    					<a href="#"><li>Test link</li></a>
+		    				</ul>
+	    				</li>
+	    				<li><a href="#">Retention (SRC)</a>
+	    					<ul>
+		    					<a href="#"><li>Test link</li></a>
+		    					<a href="#"><li>Test link</li></a>
+		    				</ul>
+	    				</li>
+	    				<li><a href="#">Access (SIAC)</a>
+	    					<ul>
+		    					<a href="#"><li>Test link</li></a>
+		    					<a href="#"><li>Test link</li></a>
+		    				</ul>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div><!-- end div#project-menu -->
+			<div id="main" class="span9" role="main">
+				<?php get_template_part('loop', 'page'); ?>
+			</div><!-- /#main -->
+		</div><!-- end div.row -->
     </div><!-- /#content -->
-  <?php roots_content_after(); ?>
 <?php get_footer(); ?>

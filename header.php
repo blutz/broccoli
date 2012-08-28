@@ -39,5 +39,5 @@
   	if( is_front_page() )
       get_template_part('templates/header', 'front');
     else
-      get_template_part('templates/header', 'top-navbar');
+      get_template_part('templates/header', 'inside');
   ?>
