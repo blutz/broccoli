@@ -4,20 +4,29 @@
 	<div class="container latest">
 		<div class="row">
 			<div id="latest-rotator" class="span9">
-				<div id="latest-rotator-item1" class="latest-rotator-item">
+				<div id="latest-rotator-item1" class="latest-rotator-item active">
 					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
 					<div class="latest-rotator-item-text">
 						<h1>CPO Meeting</h1>
 						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
 					</div><!-- div.latest-rotator-item-text -->
-				</div>
+				</div><!-- end div#latest-rotator-item1 -->
+				
+				<div id="latest-rotator-item2" class="latest-rotator-item">
+					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
+					<div class="latest-rotator-item-text">
+						<h1>CPO Meeting2</h1>
+						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
+					</div><!-- div.latest-rotator-item-text -->
+				</div><!-- end div#latest-rotator-item2 -->
+					
 				<ul id="latest-rotator-controls">
-					<li><a href="#"><div id="latest-rotator-controls-prev"> </div>Prev</a></li>
-					<li><a href="#"></a></li>
-					<li id="rotator-current"><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"><div id="latest-rotator-controls-next"> </div>Next</a></li>
+					<li><a id="rotator-control-prev" href="#latest-rotator"><div id="latest-rotator-controls-prev"> </div>Prev</a></li>
+					<li id="rotator-current"><a id="rotator-control-1" href="#0"></a></li>
+					<li><a id="rotator-control-2" href="#1"></a></li>
+					<li><a id="rotator-control-3" href="#2"></a></li>
+					<li><a id="rotator-control-4" href="#3"></a></li>
+					<li><a id="rotator-control-next" href="#4"><div id="latest-rotator-controls-next"> </div>Next</a></li>
 				</ul><!-- end div#latest-rotator-controls -->
 			</div><!-- end div#latest-rotator -->
 			<div id="latest-socialmedia-container" class="span3">

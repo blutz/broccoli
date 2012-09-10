@@ -169,10 +169,13 @@ ul#header-inside-nav-links {
 	text-align:left;
 }
 
-ul#header-inside-nav-links li {
+ul#header-inside-nav-links li  {
 	display:inline;
 	color:white;
 	padding-right:19px;
+}
+ul#header-inside-nav-links li a {
+	color:white;
 }
 
 #header-nav-links a {
@@ -185,13 +188,17 @@ ul#header-nav-links li:hover {
 .input-append {
 	float:right;
 }
-a#header-nav-featured, a#header-nav-featured li {
+ul#header-inside-nav-links .menu-jobs-at-cpo a {
 	font-weight:bold;
 	color:#fff000;
 }
-.dropdown-menu a#header-nav-featured li {
+#mobile-dropdown li:last-child a {
 	color:#333;
 	font-weight:bold;
+}
+#mobile-dropdown li > a:hover {
+	background:none;
+	text-decoration:underline;
 }
 
 #bighello .row {
@@ -269,6 +276,12 @@ span.bighello-big strong {
 .btn-pink:active, .btn-main:active {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5) inset;
 }
+
+.header-logo-front {
+	margin-bottom:11px;
+}
+
+/* ===== Slider ======================================================== */
 
 #latest-container {
 	background-color:#1A3548;
@@ -397,6 +410,14 @@ li#rotator-current {
 #latest-rotator {
 	position:relative;
 }
+
+.latest-rotator-item {
+	display:none;
+}
+.latest-rotator-item.active {
+	display:block;
+}
+
 
 
 /* ===== Body styles (front) ======================================================== */

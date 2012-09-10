@@ -2,6 +2,8 @@
 	Byron Lutz
 */
 
+/***** CONTROL IMAGE SLIDER *****/
+
 /***** GET RID OF HARD IMAGE SIZES *****/
 $(document).ready(function() {
 	$('.wp-post-image').removeAttr('height').removeAttr('width');
