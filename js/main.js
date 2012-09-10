@@ -2,7 +2,51 @@
 	Byron Lutz
 */
 
-/***** CONTROL IMAGE SLIDER *****/
+/***** IMAGE SLIDER *****/
+var maxSlides = 4;
+// Switches from the current slide to whatever is defined in the event object
+function sliderHandler(e) {
+	e.preventDefault();
+	
+	// Find current slide number
+	var currentItem = $('.latest-rotator-item.active').attr('id').substr(19);
+	currentItem = parseInt(currentItem);
+	if (!currentItem)
+		currentItem = 1;
+	
+	// Find slide number we are switching to
+	var nextItem = e.srcElement.id.substr(16);
+	if(nextItem == 'next')
+		nextItem = currentItem + 1;
+	else if (nextItem == 'prev')
+		nextItem = currentItem -1;
+	nextItem = parseInt(nextItem);
+	if (nextItem < 1)
+		nextItem = 1;
+	if (nextItem > maxSlides)
+		nextItem = maxSlides;
+		
+	console.log("current: "+currentItem);
+	console.log("next: "+nextItem);
+	
+	// Make sure we actually have to switch the slide
+	if(currentItem == nextItem)
+		return;
+		
+	// Now actually make the slide switch
+	// Switch item
+	$('#latest-rotator-item'+currentItem).removeClass('active');
+	$('#latest-rotator-item'+nextItem).addClass('active');
+	// Change navigation active state
+	$('li#rotator-current').removeAttr('id');
+	$('a#rotator-control-'+nextItem).parent().attr('id','rotator-current');
+}
+
+$(document).ready(function() {
+	$('[id^="rotator-control-"]').click(sliderHandler);
+});
+
+
 
 /***** GET RID OF HARD IMAGE SIZES *****/
 $(document).ready(function() {
