@@ -304,12 +304,11 @@ span.bighello-big strong {
 .latest a {
 	color:#fbf03b;
 }
-.latest-rotator-image {
+.latest-rotator-image.wp-post-image {
     float: left;
     display: block;
     margin-right: 15px;
     margin-bottom:-20px;
-    border:1px solid #b9b9b9;
     box-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
 .latest-rotator-item-text {
@@ -319,6 +318,10 @@ span.bighello-big strong {
 	margin-bottom:2px;
 	font-size:1.8em;
 	font-family:"Museo700Regular";
+}
+
+.latest-rotator-item-text a h1 {
+	color:white;
 }
 
 #latest-socialmedia {
@@ -733,6 +736,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	.fb-like-box > span > iframe {
 		width:100%;
 	}
+	.latest-rotator-item-text {
+		clear:both;
+	}
 }
 
 /* Landscape phone to portrait tablet */
@@ -825,6 +831,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	#header-logo {
 	    margin-bottom: -15px;
 	}
+	.latest-rotator-item-text {
+		clear:both;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -841,6 +850,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 		text-transform:none;
 		padding:10px;
 		height:58px;
+	}
+	#pagebody-main-buttonset button {
+		padding:10px;
 	}
 }
 

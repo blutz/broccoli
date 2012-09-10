@@ -5,8 +5,8 @@
 				<a href="<?php echo site_url(); ?>"><img id="header-logo-img" src="/img/logo-big.png" /></a>
 			</div><!-- end div#header-logo -->
 			<div id="header-nav" class="span5">
-				<form class="input-append">
-					<input id="search" type="search" role="search" placeholder="Search..."
+				<form class="input-append" method="get" action="/">
+					<input id="search" name="s" type="search" role="search" placeholder="Search..."
 					/><submit class="btn"><i class="icon-search"></i></submit>
 				</form>
 			</div>

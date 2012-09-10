@@ -26,13 +26,14 @@ function roots_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'top_navigation' => __('Top Navigation', 'cpo'),
+    'front_buttons' => __('Front Buttons', 'cpo')
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
   add_theme_support('post-thumbnails');
   // set_post_thumbnail_size(150, 150, false);
   add_image_size('project-pic', 870, 9999); // 300px wide (and unlimited height)
-  add_image_size('slider', 450, 350); // 300px wide (and unlimited height)
+  add_image_size('slider', 450, 350, true); // 300px wide (and unlimited height)
 
 
   // Add post formats (http://codex.wordpress.org/Post_Formats)

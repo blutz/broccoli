@@ -7,6 +7,7 @@ var maxSlides = 4;
 // Switches from the current slide to whatever is defined in the event object
 function sliderHandler(e) {
 	e.preventDefault();
+	console.log(e);
 	
 	// Find current slide number
 	var currentItem = $('.latest-rotator-item.active').attr('id').substr(19);
@@ -16,15 +17,19 @@ function sliderHandler(e) {
 	
 	// Find slide number we are switching to
 	var nextItem = e.srcElement.id.substr(16);
-	if(nextItem == 'next')
+	console.log(nextItem);
+	if(nextItem == 'next' || nextItem == 'ontrols-next')
 		nextItem = currentItem + 1;
-	else if (nextItem == 'prev')
+	else if (nextItem == 'prev' || nextItem == 'ontrols-prev')
 		nextItem = currentItem -1;
+	console.log(nextItem);
 	nextItem = parseInt(nextItem);
 	if (nextItem < 1)
 		nextItem = 1;
+	console.log(nextItem);
 	if (nextItem > maxSlides)
 		nextItem = maxSlides;
+	console.log(nextItem);
 		
 	console.log("current: "+currentItem);
 	console.log("next: "+nextItem);

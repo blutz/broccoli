@@ -4,38 +4,19 @@
 	<div class="container latest">
 		<div class="row">
 			<div id="latest-rotator" class="span9">
-				<div id="latest-rotator-item1" class="latest-rotator-item active">
-					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
+				<?php query_posts('posts_per_page=4'); ?>
+				<?php $postnumber = 1; ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<div id="latest-rotator-item<?php echo $postnumber; ?>" class="latest-rotator-item <?php if($postnumber == 1) echo 'active';?>">
+					<?php the_post_thumbnail('slider',array('class' => "latest-rotator-image")); ?>
 					<div class="latest-rotator-item-text">
-						<h1>CPO Meeting</h1>
-						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
+						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+						<?php the_content('Read more &raquo;'); ?>
 					</div><!-- div.latest-rotator-item-text -->
-				</div><!-- end div#latest-rotator-item1 -->
+				</div><!-- end div#latest-rotator-item<?php echo $postnumber; ?> -->
+				<?php $postnumber++; ?>
+				<?php endwhile; endif; ?>
 				
-				<div id="latest-rotator-item2" class="latest-rotator-item">
-					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
-					<div class="latest-rotator-item-text">
-						<h1>CPO Meeting2</h1>
-						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
-					</div><!-- div.latest-rotator-item-text -->
-				</div><!-- end div#latest-rotator-item2 -->
-				
-				<div id="latest-rotator-item3" class="latest-rotator-item">
-					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
-					<div class="latest-rotator-item-text">
-						<h1>CPO Meeting3</h1>
-						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
-					</div><!-- div.latest-rotator-item-text -->
-				</div><!-- end div#latest-rotator-item3 -->
-				
-				<div id="latest-rotator-item4" class="latest-rotator-item">
-					<img class="latest-rotator-image" src="http://placehold.it/450x350" />
-					<div class="latest-rotator-item-text">
-						<h1>CPO Meeting4</h1>
-						<p>The CPO Internship consists of 19 student interns with 3 student assistant office managers guiding them as they learn skills to be more empowered and conscious student leaders. <a href="#">Read more &raquo;</a></p>
-					</div><!-- div.latest-rotator-item-text -->
-				</div><!-- end div#latest-rotator-item4 -->
-					
 				<ul id="latest-rotator-controls">
 					<li><a id="rotator-control-prev" href="#latest-rotator"><div id="latest-rotator-controls-prev"> </div>Prev</a></li>
 					<li id="rotator-current"><a id="rotator-control-1" href="#"></a></li>
@@ -64,11 +45,22 @@
 			<h1>What we do</h1>
 			<p>Let's have a little blurb about the CPO as a whole. Perhaps include FITTED in here? Then talk about why it was founded, who runs it, and stuff like that. Don't use any inside terms (SIAC, SRC, ...) and no jargon.</p>
 			<p>Then talk about how students can get involved. Then they can click the button to volunteer or browse through our projects. Yay!</p>
+<!--
 			<div id="pagebody-main-buttonset">
 				<button class="btn-main">Volunteer Now</button>
 				<button class="btn-main">Access the Test Bank</button>
 				<button class="btn-main">Get a Peer Mentor</button>
 			</div>
+-->
+			<div id="pagebody-main-buttonset">
+				<?php 
+				foreach (wp_get_nav_menu_items('Front page buttons') as $item) :
+				?>
+					<?php //print_r($item); ?>
+					<a href="<?php echo $item->url; ?>"><button class="btn-main"><?php echo $item->title; ?></button></a>
+				<?php endforeach; ?>
+			</div>
+
 		<div id="pagebody-main-tabs">
 			<ul class="nav nav-tabs">
 			   <li class="active"><a href="#access" data-toggle="tab">Access</a></li>
