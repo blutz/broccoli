@@ -37,7 +37,6 @@
 				<span class="bighello-big">We're <strong>students</strong>,<br />helping our <strong>community</strong>.</span>
 				<div class="row">
 					<div class="span5">
-<!-- 						<span class="bighello-describe">The CPO is made up of student-initiated, student-run projects that work for freedom and equality in our own communities. We focus on <strong>access</strong> to college, <strong>retention</strong> in college, and <strong>community service</strong> for college students.</span> -->
 							<?php dynamic_sidebar( 'top-text' ); ?>
 						<button class="btn-pink" id="bighello-button">Get involved</button>
 					</div>
