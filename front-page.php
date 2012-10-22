@@ -42,9 +42,12 @@
 <div class="container pagebody">
 	<div class="row">
 		<div id="pagebody-main" class="span8">
+<!--
 			<h1>What we do</h1>
 			<p>Let's have a little blurb about the CPO as a whole. Perhaps include FITTED in here? Then talk about why it was founded, who runs it, and stuff like that. Don't use any inside terms (SIAC, SRC, ...) and no jargon.</p>
 			<p>Then talk about how students can get involved. Then they can click the button to volunteer or browse through our projects. Yay!</p>
+-->
+			<?php dynamic_sidebar('front-body'); ?>
 			<div id="pagebody-main-buttonset">
 				<?php 
 				foreach (wp_get_nav_menu_items('Front page buttons') as $item) :
