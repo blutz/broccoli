@@ -22,6 +22,17 @@ function cpoWidgets() {
 		'before_title' => '',
 		'after_title' => ''		
 	));
+    
+    register_sidebar(array(
+		'name' => __( 'Front body' ),
+		'id' => 'front-body',
+		'description' => __( 'Text for the front page body' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h1>',
+		'after_title' => '</h1>'		
+    ));
+
 }
 
 add_action('widgets_init', 'cpoWidgets');
