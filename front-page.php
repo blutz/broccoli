@@ -62,17 +62,6 @@
 			<div class="tab-content">
 			   <div class="tab-pane active" id="access">
 					<h2>Getting students to college</h2>
-<!--
-					<ul id="access-projectlist">
-						<a href="#"><li>American Indian Recruitment</li></a>
-						<a href="#"><li>Higher Opportunity Program For Education</li></a>
-						<a href="#"><li>MEChA Xinachtli</li></a>
-						<a href="#"><li>Mentors for Academic And Peer Support</li></a>
-						<a href="#"><li>Pacific Islander Education and Retention</li></a>
-						<a href="#"><li>Samahang Pilipino Advancing Community Empowerment</li></a>
-						<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
-					</ul>
--->
 					<button class="btn-main btn-collapse visible-phone" data-toggle="collapse" data-target=".access-collapse">View all access projects <b class="caret"></b></button>
 					<ul id="access-projectlist">
 						<a href="#"><li>American Indian Recruitment</li></a>
@@ -84,12 +73,20 @@
 						<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
 					</ul>
 
-					<p>Blah blah blah. Talk about the CPO and stuff here. Yay it's fun and we're getting kids to college!</p>
-					<p>Maybe talk about other stuff too like what SIAC means and other cool stuff like that.</p>
-			   </div><!-- end div.tab-pane#access -->
-			   <div class="tab-pane" id="retention">Retention</div>
-				<div class="tab-pane" id="service">Service</div>
-			   <div class="tab-pane" id="risk">Risk</div>
+					<?php dynamic_sidebar('siac'); ?>
+				</div><!-- end div.tab-pane#access -->
+				<div class="tab-pane" id="retention">
+					<h2>Helping students graduate</h2>
+					<?php dynamic_sidebar('src'); ?>
+				</div>
+				<div class="tab-pane" id="service">
+					<h2>Students helping our communities</h2>
+					<?php dynamic_sidebar('cposa'); ?>
+				</div>
+				<div class="tab-pane" id="risk">
+					<h2>Managing risk while helping our communities</h2>
+					<?php dynamic_sidebar('srec'); ?>
+				</div>
 			</div>
 		</div>
 		</div><!-- end div#pagebody-main -->

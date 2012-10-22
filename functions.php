@@ -26,7 +26,12 @@ function roots_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'top_navigation' => __('Top Navigation', 'cpo'),
-    'front_buttons' => __('Front Buttons', 'cpo')
+    'front_buttons' => __('Front Buttons', 'cpo'),
+    'siac_projects' => __('SIAC Navigation', 'siac'),
+    'src_projects' => __('SRC Navigation', 'src'),
+    'cposa_projects' => __('CPOSA Navigation', 'cposa'),
+    'srec_projects' => __('SREC Navigation', 'srec'),
+
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
