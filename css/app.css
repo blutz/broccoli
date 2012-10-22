@@ -515,7 +515,7 @@ ul#access-projectlist a {
     border-bottom: 1px solid #dbdbdb;
     padding:4px 10px;
 }
-ul#access-projectlist a:last-child {
+ul#access-projectlist li:last-child a {
 	border-bottom:0;
 }
 .btn-collapse {

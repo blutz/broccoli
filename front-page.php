@@ -63,6 +63,7 @@
 			   <div class="tab-pane active" id="access">
 					<h2>Getting students to college</h2>
 					<button class="btn-main btn-collapse visible-phone" data-toggle="collapse" data-target=".access-collapse">View all access projects <b class="caret"></b></button>
+<!--
 					<ul id="access-projectlist">
 						<a href="#"><li>American Indian Recruitment</li></a>
 						<a href="#"><li>Higher Opportunity Program For Education</li></a>
@@ -72,7 +73,14 @@
 						<a href="#"><li>Samahang Pilipino Advancing Community Empowerment</li></a>
 						<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
 					</ul>
-
+-->
+					<?php wp_nav_menu(array(
+						'theme_location' => 'siac_projects',
+						'container' => '',
+						'items_wrap' => '<ul id="access-projectlist" class="%2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
+	
 					<?php dynamic_sidebar('siac'); ?>
 				</div><!-- end div.tab-pane#access -->
 				<div class="tab-pane" id="retention">
