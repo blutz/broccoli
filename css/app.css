@@ -499,7 +499,7 @@ ul.nav li.active a {
     margin-bottom:13px;
 }
 
-ul#access-projectlist {
+ul#access-projectlist, ul.projectlist {
     list-style: none;
     margin: 0;
     width: 40%;
@@ -510,12 +510,12 @@ ul#access-projectlist {
     margin-left:10px;
 }
 
-ul#access-projectlist a {
+ul#access-projectlist a, ul.projectlist a {
     display: block;
     border-bottom: 1px solid #dbdbdb;
     padding:4px 10px;
 }
-ul#access-projectlist li:last-child a {
+ul#access-projectlist li:last-child a, ul.projectlist li:last-child a {
 	border-bottom:0;
 }
 .btn-collapse {
@@ -801,7 +801,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	    width: 100%;
 	    margin-bottom: 13px;
 	}
-	ul#access-projectlist {
+	ul#access-projectlist, ul.projectlist {
 		width:99%;
 	}
 	.access-collapse {

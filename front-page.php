@@ -77,7 +77,7 @@
 					<?php wp_nav_menu(array(
 						'theme_location' => 'siac_projects',
 						'container' => '',
-						'items_wrap' => '<ul id="access-projectlist" class="%2$s">%3$s</ul>',
+						'items_wrap' => '<ul id="access-projectlist" class="projectlist %2$s">%3$s</ul>',
 						'menu_class' => ''				
 					)); ?>
 	
@@ -85,14 +85,32 @@
 				</div><!-- end div.tab-pane#access -->
 				<div class="tab-pane" id="retention">
 					<h2>Helping students graduate</h2>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'src_projects',
+						'container' => '',
+						'items_wrap' => '<ul id="src-projectlist" class="projectlist %2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
 					<?php dynamic_sidebar('src'); ?>
 				</div>
 				<div class="tab-pane" id="service">
 					<h2>Students helping our communities</h2>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'cposa_projects',
+						'container' => '',
+						'items_wrap' => '<ul id="cposa-projectlist" class="projectlist %2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
 					<?php dynamic_sidebar('cposa'); ?>
 				</div>
 				<div class="tab-pane" id="risk">
 					<h2>Managing risk while helping our communities</h2>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'srec_projects',
+						'container' => '',
+						'items_wrap' => '<ul id="srec-projectlist" class="projectlist %2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
 					<?php dynamic_sidebar('srec'); ?>
 				</div>
 			</div>
