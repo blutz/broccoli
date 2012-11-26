@@ -18,7 +18,7 @@ a {
 	color:#00adef;
 }
 a:visited {
-	color:#183042;
+	color:#7e2f8d;
 }
 
 .fb-like-box, .fb-like-box iframe[style], .fb-like-box span[style] {width: 100% !important;}
@@ -721,7 +721,7 @@ p.copyright {
 	float:right;
 }
 
-/* ===== Project pages ======================================================== */
+/* ===== Post pages ======================================================== */
 .byline {
 	display:none;
 }
@@ -730,7 +730,7 @@ time.updated {
     font-size: 0.8em;
     opacity: 0.6;
     margin-bottom: 16px;
-    display: block;
+    display: inline-block;
 }
 .medium-thumb {
     float: right;
@@ -740,6 +740,20 @@ time.updated {
 	margin-top:10px;
 }
 
+.search-thumb {
+	float: right;
+	margin-left: 10px;
+}
+
+a > .wp-post-image:hover {
+	box-shadow:0 0 7px rgba(0, 0, 0, 0.7);
+	transition:box-shadow 0.1s;
+	-webkit-transition:box-shadow 0.1s;
+	-moz-transition:box-shadow 0.1s;
+	-o-transition:box-shadow 0.1s;
+
+}
+	
 
 /* =============================================================================
    WordPress Generated Classes

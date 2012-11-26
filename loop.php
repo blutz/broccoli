@@ -2,7 +2,7 @@
 <?php if (!have_posts()) { ?>
   <div class="alert alert-block fade in">
     <a class="close" data-dismiss="alert">&times;</a>
-    <p><?php _e('Sorry, no results were found.', 'roots'); ?></p>
+    <p><?php _e('Sorry, no results were found. Try a different search.', 'roots'); ?></p>
   </div>
   <?php get_search_form(); ?>
 <?php } ?>
@@ -13,6 +13,7 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php roots_post_inside_before(); ?>
       <header>
+ 	    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', array('class'=>'search-thumb')); ?></a>
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <?php roots_entry_meta(); ?>
       </header>
@@ -27,8 +28,10 @@
         <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
       </footer>
     <?php roots_post_inside_after(); ?>
+    <br style="width:100%;clear:both;display:block;" />
     </article>
   <?php roots_post_after(); ?>
+  <hr />
 <?php endwhile; /* End loop */ ?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
