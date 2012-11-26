@@ -2,6 +2,12 @@
 	Byron Lutz
 */
 
+/***** SHOW APPROPRIATE HEADING ON SIDEBAR *****/
+$(document).ready(function() {
+	if($(window).innerWidth() >= 768)
+		$('.active').parent().collapse('show');
+});
+
 /***** IMAGE SLIDER *****/
 var maxSlides = 4;
 // Switches from the current slide to whatever is defined in the event object

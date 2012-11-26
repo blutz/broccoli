@@ -23,10 +23,20 @@
 		    				</ul>
 	    				</li>
 	    				<li><a href="#" data-toggle="collapse" data-target="#menu-siac">Access (SIAC) <i class="icon-chevron-down"></i></a>
+	    			<?php wp_nav_menu(array(
+						'theme_location' => 'siac_projects',
+						'container' => '',
+						'items_wrap' => '<ul id="menu-siac" class="collapse %2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
+
+	    				
+<!--
 	    					<ul class="collapse" id="menu-siac">
 		    					<a href="#"><li>Test link</li></a>
 		    					<a href="#"><li>Test link</li></a>
 		    				</ul>
+-->
 	    				</li>
 	    			</ul>
 	    		</div>

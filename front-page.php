@@ -29,7 +29,6 @@
 			<div id="latest-socialmedia-container" class="span3">
 				<div id="latest-socialmedia">
 					<h3>Latest Tweet</h3>
-<!-- 					<p>The CPO Men's Retreat is this weekend! Contact Eder Gaona if you would like to attend for a couple days away from LA.</p> -->
 						<p><?php latest_tweet(); ?></p>
 					<a href="https://twitter.com/uclacpo" class="twitter-follow-button" data-show-count="false">Follow @uclacpo</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -47,7 +46,6 @@
 				<?php 
 				foreach (wp_get_nav_menu_items('Front page buttons') as $item) :
 				?>
-					<?php //print_r($item); ?>
 					<a href="<?php echo $item->url; ?>"><button class="btn-main"><?php echo $item->title; ?></button></a>
 				<?php endforeach; ?>
 			</div>
@@ -63,17 +61,6 @@
 			   <div class="tab-pane active" id="access">
 					<h2>Getting students to college</h2>
 					<button class="btn-main btn-collapse visible-phone" data-toggle="collapse" data-target=".access-collapse">View all access projects <b class="caret"></b></button>
-<!--
-					<ul id="access-projectlist">
-						<a href="#"><li>American Indian Recruitment</li></a>
-						<a href="#"><li>Higher Opportunity Program For Education</li></a>
-						<a href="#"><li>MEChA Xinachtli</li></a>
-						<a href="#"><li>Mentors for Academic And Peer Support</li></a>
-						<a href="#"><li>Pacific Islander Education and Retention</li></a>
-						<a href="#"><li>Samahang Pilipino Advancing Community Empowerment</li></a>
-						<a href="#"><li>Students Heightening Academic Performance through Education</li></a>
-					</ul>
--->
 					<?php wp_nav_menu(array(
 						'theme_location' => 'siac_projects',
 						'container' => '',
