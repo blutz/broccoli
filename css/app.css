@@ -581,6 +581,9 @@ ul#access-projectlist li:last-child a, ul.projectlist li:last-child a {
 #footer-container h3:first-child {
 	padding-top:0;
 }
+.footer-sm {
+	margin-top:10px;
+}
 
 #bottomlogo {
 	margin-top:20px;
