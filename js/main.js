@@ -5,7 +5,7 @@
 /***** SHOW APPROPRIATE HEADING ON SIDEBAR *****/
 $(document).ready(function() {
 	if($(window).innerWidth() >= 768)
-		$('.active').parent().collapse('show');
+		$('.project-menu-menu .active').parent().collapse('show');
 });
 
 /***** IMAGE SLIDER *****/
