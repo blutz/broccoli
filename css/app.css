@@ -578,6 +578,9 @@ ul#access-projectlist li:last-child a, ul.projectlist li:last-child a {
 	padding-top:10px;
 	font-family:"Verdana";
 }
+#footer-container h3:first-child {
+	padding-top:0;
+}
 
 #bottomlogo {
 	margin-top:20px;

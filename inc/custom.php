@@ -60,6 +60,17 @@ function cpoWidgets() {
 		'before_title' => '<h1>',
 		'after_title' => '</h1>'		
     ));
+    
+	register_sidebar(array(
+		'name' => __( 'Footer' ),
+		'id' => 'footer-sidebar',
+		'description' => __( 'Contact info for the footer' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'		
+    ));
+
 
 }
 

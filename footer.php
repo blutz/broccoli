@@ -69,23 +69,10 @@
 				</ul>
 			</div><!-- end div.span3 -->
 			<div class="span3" id="footer-contact">
-				<h3>Mail</h3>
-				<p>Student Activities Center<br />
-				220 Westwood Plaza, Suite 105<br />
-				Los Angeles, CA 90095<br />
-				Mailing Code: 145406</p>
-				
-				<h3>Call</h3>
-				<p>(310) 825-5969</p>
-				
-				<h3>Visit</h3>
-				<p>Student Activities Center</p>
-				
-				<h3>Email</h3>
-				<p><a href="#">info@cpo.ucla.edu</a></p>
+				<?php dynamic_sidebar('footer-sidebar'); ?>
 				
 				<img src="/img/logo-white.png" id="bottomlogo" />
-				<p class="copyright">Content &copy; 2012 UCLA Community Programs Office Department.<br />All rights reserved.</p>
+				<p class="copyright">Content &copy; <?php echo date('Y'); ?> UCLA Community Programs Office Department.<br />All rights reserved.</p>
 			</div>
 		</div>
 	</div><!-- end div.footer -->
