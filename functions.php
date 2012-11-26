@@ -27,11 +27,11 @@ function roots_setup() {
   register_nav_menus(array(
     'top_navigation' => __('Top Navigation', 'cpo'),
     'front_buttons' => __('Front Buttons', 'cpo'),
-    'siac_projects' => __('SIAC Navigation', 'siac'),
-    'src_projects' => __('SRC Navigation', 'src'),
-    'cposa_projects' => __('CPOSA Navigation', 'cposa'),
-    'srec_projects' => __('SREC Navigation', 'srec'),
-
+    'siac_projects' => __('SIAC Navigation', 'cpo'),
+    'src_projects' => __('SRC Navigation', 'cpo'),
+    'cposa_projects' => __('CPOSA Navigation', 'cpo'),
+    'srec_projects' => __('SREC Navigation', 'cpo'),
+    'cpo_nav' => __('Inner page navigation', 'cpo'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
