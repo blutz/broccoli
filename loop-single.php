@@ -4,6 +4,7 @@
     <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
     <?php roots_post_inside_before(); ?>
       <header>
+    	<?php the_post_thumbnail('medium', array('class'=>'medium-thumb')); ?>
         <h1 class="entry-title"><?php the_title(); ?></h1>
         <?php roots_entry_meta(); ?>
       </header>

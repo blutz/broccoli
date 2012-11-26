@@ -721,6 +721,26 @@ p.copyright {
 	float:right;
 }
 
+/* ===== Project pages ======================================================== */
+.byline {
+	display:none;
+}
+time.updated {
+    font-style: italic;
+    font-size: 0.8em;
+    opacity: 0.6;
+    margin-bottom: 16px;
+    display: block;
+}
+.medium-thumb {
+    float: right;
+    margin-bottom: 20px;
+}
+#main > article {
+	margin-top:10px;
+}
+
+
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -748,6 +768,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	}
 	.latest-rotator-item-text {
 		clear:both;
+	}
+	.medium-thumb {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 

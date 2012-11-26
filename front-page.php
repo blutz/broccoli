@@ -8,7 +8,7 @@
 				<?php $postnumber = 1; ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div id="latest-rotator-item<?php echo $postnumber; ?>" class="latest-rotator-item <?php if($postnumber == 1) echo 'active';?>">
-					<?php the_post_thumbnail('slider',array('class' => "latest-rotator-image")); ?>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('slider',array('class' => "latest-rotator-image")); ?></a>
 					<div class="latest-rotator-item-text">
 						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 						<?php the_content('Read more &raquo;'); ?>
