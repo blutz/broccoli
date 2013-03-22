@@ -11,7 +11,7 @@
 					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('slider',array('class' => "latest-rotator-image")); ?></a>
 					<div class="latest-rotator-item-text">
 						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
-						<?php the_content('Read more &raquo;'); ?>
+						<?php the_excerpt(); ?>
 					</div><!-- div.latest-rotator-item-text -->
 				</div><!-- end div#latest-rotator-item<?php echo $postnumber; ?> -->
 				<?php $postnumber++; ?>
