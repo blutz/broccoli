@@ -50,7 +50,7 @@
 						</div><!-- end div.sidebar-part -->
 				<?php endif; ?>
 				<?php
-					$staff = get_post_meta($post->ID, 'staff', true);
+					$staff = get_field('staff');
 					if ($staff != "") : ?>
 						<div class="sidebar-part hidden-phone">
 							<h3>Staff</h3>
