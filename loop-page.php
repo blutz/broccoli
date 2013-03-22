@@ -42,6 +42,13 @@
 						</div><!-- end div#twitter-button -->
 				<?php endif; ?>
 				<?php
+					$sidebar = get_field('sidebar');
+					if ($sidebar != "") : ?>
+						<div class="sidebar-part hidden-phone">
+							<?php echo $sidebar; ?>
+						</div><!-- end div.sidebar-part -->
+				<?php endif; ?>
+				<?php
 					$volunteer_info = get_post_meta($post->ID, 'volunteer_info', true);
 					if ($volunteer_info != "") : ?>
 						<div class="sidebar-part">
@@ -55,13 +62,6 @@
 						<div class="sidebar-part hidden-phone">
 							<h3>Staff</h3>
 							<?php echo $staff; ?>
-						</div><!-- end div.sidebar-part -->
-				<?php endif; ?>
-				<?php
-					$sidebar = get_post_meta($post->ID, 'sidebar', true);
-					if ($sidebar != "") : ?>
-						<div class="sidebar-part hidden-phone">
-							<?php echo $sidebar; ?>
 						</div><!-- end div.sidebar-part -->
 				<?php endif; ?>
 			</aside><!-- end aside#project-side -->
