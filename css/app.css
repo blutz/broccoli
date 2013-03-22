@@ -264,6 +264,9 @@ span.bighello-big strong {
 }
 
 .btn-pink:hover {
+	color: white;
+	text-decoration: none;
+
 	background: rgb(206,45,136); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(206,45,136,1) 0%, rgba(175,43,118,1) 45%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,45,136,1)), color-stop(45%,rgba(175,43,118,1))); /* Chrome,Safari4+ */
