@@ -325,8 +325,10 @@ function roots_gallery($attr) {
   return $output;
 }
 
-remove_shortcode('gallery');
-add_shortcode('gallery', 'roots_gallery');
+// Uncomment these to override the default gallery style. Note that this will
+// disable Jetpack's custom gallery styles.
+//remove_shortcode('gallery');
+//add_shortcode('gallery', 'roots_gallery');
 
 /**
  * Add class="thumbnail" to attachment items
