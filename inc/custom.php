@@ -75,3 +75,15 @@ function cpoWidgets() {
 }
 
 add_action('widgets_init', 'cpoWidgets');
+
+
+// Add the hr button to TinyMCE
+function cpo_mce_buttons_2($buttons) {	
+	/**
+	 * Add in a core button that's disabled by default
+	 */
+	$buttons[] = 'hr';
+
+	return $buttons;
+}
+add_filter('mce_buttons_2', 'cpo_mce_buttons_2');
