@@ -11,7 +11,7 @@
 	    				<li><a href="#" data-toggle="collapse" data-target="#menu-cposa">Service (CPOSA) <i class="icon-chevron-down"></i></a>
 	    					<ul id="menu-cposa" class="collapse">
 	    						<li>
-	    							<a href="<?php echo get_permalink( get_page_by_path( 'map' ) ); ?>">About CPOSA</a>
+	    							<a href="<?php echo get_permalink( get_page_by_path( 'cposa' ) ); ?>">About CPOSA</a>
 	    						</li>
 	    						<li class="menu-header">Education caucus</li>
 				    			<?php wp_nav_menu(array(
