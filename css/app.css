@@ -534,6 +534,13 @@ ul#access-projectlist li:last-child a, ul.projectlist li:last-child a {
     position: relative;
     top: 7px;
 }
+ul.projectlist .menu-title {
+	padding: 4px 10px;
+	border-bottom: 1px solid #dbdbdb;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+}
 
 
 
@@ -653,6 +660,9 @@ p.copyright {
 }
 .project-menu-menu .active {
 	background-color: rgba(0, 174, 229, 0.1);
+}
+.project-menu-menu .menu-header {
+	font-weight: bold;
 }
 .active-project {
 	background-color:#dbdbdb;

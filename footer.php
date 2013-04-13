@@ -3,8 +3,23 @@
 		<div class="row">
 			<div class="span3 hidden-phone">
 				<h1>CPOSA <span>(Service)</span></h1>
+				<h2>Education Caucus</h2>
     			<?php wp_nav_menu(array(
-					'theme_location' => 'cposa_projects',
+					'theme_location' => 'cposa_education_projects',
+					'container' => '',
+					'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+					'menu_class' => ''				
+				)); ?>
+				<h2>Health Caucus</h2>
+    			<?php wp_nav_menu(array(
+					'theme_location' => 'cposa_health_projects',
+					'container' => '',
+					'items_wrap' => '<ul class="%2$s">%3$s</ul>',
+					'menu_class' => ''				
+				)); ?>
+				<h2>Social Justice</h2>
+    			<?php wp_nav_menu(array(
+					'theme_location' => 'cposa_justice_projects',
 					'container' => '',
 					'items_wrap' => '<ul class="%2$s">%3$s</ul>',
 					'menu_class' => ''				
@@ -29,7 +44,7 @@
 				)); ?>
 				<h1>CPO</h1>
     			<?php wp_nav_menu(array(
-					'theme_location' => 'cposa_nav',
+					'theme_location' => 'cpo_nav',
 					'container' => '',
 					'items_wrap' => '<ul class="%2$s">%3$s</ul>',
 					'menu_class' => ''				

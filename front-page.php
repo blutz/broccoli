@@ -82,12 +82,30 @@
 				</div>
 				<div class="tab-pane" id="service">
 					<h2>Students helping our communities</h2>
-					<?php wp_nav_menu(array(
-						'theme_location' => 'cposa_projects',
-						'container' => '',
-						'items_wrap' => '<ul id="cposa-projectlist" class="projectlist %2$s">%3$s</ul>',
-						'menu_class' => ''				
-					)); ?>
+					<ul id="cposa-projectlist" class="projectlist">
+						<li class="menu-title">Education Caucus</li>
+						<?php wp_nav_menu(array(
+							'theme_location' => 'cposa_education_projects',
+							'container' => '',
+							'items_wrap' => '%3$s',
+							'menu_class' => ''				
+						)); ?>
+						<li class="menu-title">Health Caucus</li>
+						<?php wp_nav_menu(array(
+							'theme_location' => 'cposa_health_projects',
+							'container' => '',
+							'items_wrap' => '%3$s',
+							'menu_class' => ''				
+						)); ?>
+						<li class="menu-title">Social Justice</li>
+						<?php wp_nav_menu(array(
+							'theme_location' => 'cposa_justice_projects',
+							'container' => '',
+							'items_wrap' => '%3$s',
+							'menu_class' => ''				
+						)); ?>
+
+					</ul>
 					<?php dynamic_sidebar('cposa'); ?>
 				</div>
 				<div class="tab-pane" id="risk">

@@ -29,7 +29,9 @@ function roots_setup() {
     'front_buttons' => __('Front Buttons', 'cpo'),
     'siac_projects' => __('SIAC Navigation', 'cpo'),
     'src_projects' => __('SRC Navigation', 'cpo'),
-    'cposa_projects' => __('CPOSA Navigation', 'cpo'),
+    'cposa_education_projects' => __('CPOSA Education Navigation', 'cpo'),
+    'cposa_health_projects' => __('CPOSA Health Navigation', 'cpo'),
+    'cposa_justice_projects' => __('CPOSA Social Justice Navigation', 'cpo'),
     'srec_projects' => __('SREC Navigation', 'cpo'),
     'cpo_nav' => __('Inner page navigation', 'cpo'),
   ));

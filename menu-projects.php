@@ -9,12 +9,29 @@
 							)); ?>
 	    				</li>
 	    				<li><a href="#" data-toggle="collapse" data-target="#menu-cposa">Service (CPOSA) <i class="icon-chevron-down"></i></a>
-			    			<?php wp_nav_menu(array(
-								'theme_location' => 'cposa_projects',
-								'container' => '',
-								'items_wrap' => '<ul id="menu-cposa" class="collapse %2$s">%3$s</ul>',
-								'menu_class' => ''				
-							)); ?>
+	    					<ul id="menu-cposa" class="collapse">
+	    						<li class="menu-header">Education caucus</li>
+				    			<?php wp_nav_menu(array(
+									'theme_location' => 'cposa_education_projects',
+									'container' => '',
+									'items_wrap' => '%3$s',
+									'menu_class' => ''				
+								)); ?>
+	    						<li class="menu-header">Health caucus</li>
+				    			<?php wp_nav_menu(array(
+									'theme_location' => 'cposa_health_projects',
+									'container' => '',
+									'items_wrap' => '%3$s',
+									'menu_class' => ''				
+								)); ?>
+	    						<li class="menu-header">Social justice</li>
+				    			<?php wp_nav_menu(array(
+									'theme_location' => 'cposa_justice_projects',
+									'container' => '',
+									'items_wrap' => '%3$s',
+									'menu_class' => ''				
+								)); ?>
+							</ul>
 	    				</li>
 	    				<li><a href="#" data-toggle="collapse" data-target="#menu-src">Retention (SRC) <i class="icon-chevron-down"></i></a>
 			    			<?php wp_nav_menu(array(
