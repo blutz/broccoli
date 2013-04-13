@@ -10,7 +10,7 @@ add_theme_support('bootstrap-responsive');  // Enable Bootstrap's responsive CSS
 add_theme_support('bootstrap-top-navbar');  // Enable Bootstrap's fixed navbar
 
 // Set the content width based on the theme's design and stylesheet
-if (!isset($content_width)) { $content_width = 940; }
+if (!isset($content_width)) { $content_width = 700; }
 
 define('POST_EXCERPT_LENGTH',       40);
 define('WRAP_CLASSES',              'container');
