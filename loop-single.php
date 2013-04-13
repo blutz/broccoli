@@ -8,13 +8,10 @@
         <h1 class="entry-title"><?php the_title(); ?></h1>
         <?php roots_entry_meta(); ?>
       </header>
-      <div class="entry-content">
+      <div class="entry-content entry-content-single">
         <?php the_content(); ?>
       </div>
-      <footer>
-        <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-        <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
-      </footer>
+      <span style="display:block;clear:both;width:100%;"> </span>
       <?php comments_template(); ?>
       <?php roots_post_inside_after(); ?>
     </article>

@@ -760,7 +760,12 @@ a > .wp-post-image:hover {
 	-o-transition:box-shadow 0.1s;
 
 }
-	
+#disqus_thread {
+	padding-top:10px;
+	margin-top:10px;
+	border-top:1px solid #aaa;
+	display:block;
+}	
 
 /* =============================================================================
    WordPress Generated Classes
