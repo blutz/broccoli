@@ -38,7 +38,8 @@
 				<div class="row">
 					<div class="span5">
 							<?php dynamic_sidebar( 'top-text' ); ?>
-						<button class="btn-pink" id="bighello-button">Get involved</button>
+							<br />
+						<!-- <button class="btn-pink" id="bighello-button">Get involved</button> -->
 					</div>
 				</div>
 			</div><!-- div#bighello -->
