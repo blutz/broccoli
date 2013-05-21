@@ -80,6 +80,14 @@ $(document).ready(function() {
 
 /***** RESPONSIVE FIXES *****/
 $(document).ready(function() {
+	fixResponsive();
+});
+
+$(window).resize(function() {
+	fixResponsive();
+});
+
+function fixResponsive() {
 	var width = $(window).width();
 	
 	// Portrait phone
@@ -91,11 +99,11 @@ $(document).ready(function() {
 		$('#access-projectlist').addClass("collapse access-collapse");
 		$('#project-content').before($('#project-side'));
 	}
-	
+
 	if(width <= 979) {
 		$('.bighello-describe').parent().removeClass('span5').addClass('span8');
 		$('#latest-rotator').removeClass('span9').addClass('span12');
 		$('#latest-socialmedia-container').removeClass('span3').addClass('span12');
 	}
-});
+}
 

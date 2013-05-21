@@ -26,7 +26,7 @@
 				)); ?>
 			</div><!-- end div.span3 -->
 			<div class="span3 hidden-phone">
-				<h1>SIAC <span>(Access)</span></h1>
+				<h1>SIAC <span>(Access/Outreach)</span></h1>
     			<?php wp_nav_menu(array(
 					'theme_location' => 'siac_projects',
 					'container' => '',

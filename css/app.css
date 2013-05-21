@@ -331,27 +331,12 @@ span.bighello-big strong {
 	color:white;
 }
 
-#latest-socialmedia {
-	margin-top:10px;
-	padding:10px 20px;
-	background-color:#122330;
-	border:1px solid #1f435e;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4) inset;
-    border-radius: 5px;
-}
-
-#latest-socialmedia h3 {
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-family:"Verdana";
-}
-
 #latest-rotator-controls {
 	list-style:none;
 	margin:0;
 	padding:0;
     position: absolute;
-    right: 51px;
+    right:22%;
     bottom: 70px;
 }
 #latest-rotator-controls a {
@@ -811,6 +796,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 		margin-right: auto;
 		display: block;
 	}
+	.latest-rotator-image.wp-post-image {
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+	}
 }
 
 /* Landscape phone to portrait tablet */
@@ -858,10 +848,12 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	    margin-bottom: 5px;
 	}
 	#latest-rotator-controls {
-	    position: static;
+		position: relative;
+		bottom: 0;
+		left: 38%;
 	    display: block;
 	    height: 30px;
-	    margin: 15px 0 35px 0;
+	    margin: 34px 0 35px 0;
 	}
 	.container.latest {
 		margin-bottom:0;
@@ -885,9 +877,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	    margin-right: -20px;
 	    padding: 10px;
 	}
-	#latest-socialmedia {
-		clear: both;
-   	}
    	#bottomlogo {
 	    margin-left: auto;
 	    margin-right: auto;
@@ -906,6 +895,11 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	.latest-rotator-item-text {
 		clear:both;
 	}
+	.latest-rotator-image.wp-post-image {
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -914,10 +908,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 		width:57%;
 	}
 	
-	#latest-socialmedia-container {
-	    margin-top: 19px;
-	    margin-bottom: 12px;
-	}
 	.btn-main {
 		text-transform:none;
 		padding:10px;
@@ -928,6 +918,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	}
 	.project-menu-menu > li > a:first-child {
 		font-size:1.1em;
+	}
+	#latest-rotator-controls {
+		right:10%;
 	}
 }
 

@@ -3,7 +3,7 @@
 <div id="latest-container">
 	<div class="container latest">
 		<div class="row">
-			<div id="latest-rotator" class="span9">
+			<div id="latest-rotator" class="span12">
 				<?php query_posts('posts_per_page=4'); ?>
 				<?php $postnumber = 1; ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -26,14 +26,6 @@
 					<li><a id="rotator-control-next" href="#"><div id="latest-rotator-controls-next"> </div>Next</a></li>
 				</ul><!-- end div#latest-rotator-controls -->
 			</div><!-- end div#latest-rotator -->
-			<div id="latest-socialmedia-container" class="span3">
-				<div id="latest-socialmedia">
-					<h3>Latest Tweet</h3>
-						<p><?php latest_tweet(); ?></p>
-					<a href="https://twitter.com/uclacpo" class="twitter-follow-button" data-show-count="false">Follow @uclacpo</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				</div>
-			</div>
 		</div>
 	</div><!-- end div.latest -->
 </div>

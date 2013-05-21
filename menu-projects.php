@@ -49,7 +49,7 @@
 								'menu_class' => ''				
 							)); ?>
 	    				</li>
-	    				<li><a href="#" data-toggle="collapse" data-target="#menu-siac">Access (SIAC) <i class="icon-chevron-down"></i></a>
+	    				<li><a href="#" data-toggle="collapse" data-target="#menu-siac">Access/Outreach (SIAC) <i class="icon-chevron-down"></i></a>
 			    			<?php wp_nav_menu(array(
 								'theme_location' => 'siac_projects',
 								'container' => '',
