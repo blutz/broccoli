@@ -363,7 +363,7 @@ span.bighello-big strong {
 #latest-rotator-controls-next {
 	background-image:url('/img/slideshow-controls.png');
 	width:11px;
-	background-position-x:-12px;
+	background-position:-12px;
 	background-repeat:no-repeat;
 	margin-left:11px;
 	margin-right:50px;
@@ -373,7 +373,7 @@ span.bighello-big strong {
 #latest-rotator-controls li a {
 	height:9px;
 	width:9px;
-	background-position-x:-25px;
+	background-position:-25px 0px;
 	display:block;
 	background-image:url('/img/slideshow-controls.png');
 	margin-right:9px;
