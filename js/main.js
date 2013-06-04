@@ -22,7 +22,7 @@ function sliderHandler(e) {
 		currentItem = 1;
 	
 	// Find slide number we are switching to
-	var nextItem = e.srcElement.id.substr(16);
+	var nextItem = e.target.id.substr(16);
 	console.log(nextItem);
 	if(nextItem == 'next' || nextItem == 'ontrols-next')
 		nextItem = currentItem + 1;
