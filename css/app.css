@@ -900,6 +900,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 		margin-left:auto;
 		margin-right:auto;
 	}
+  #latest-rotator {
+    overflow:hidden;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -922,9 +925,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	#latest-rotator-controls {
 		right:10%;
 	}
-  #latest-rotator {
-    overflow:hidden;
-  }
 }
 
 /* Large desktop */
