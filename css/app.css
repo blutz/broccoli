@@ -922,6 +922,9 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 	#latest-rotator-controls {
 		right:10%;
 	}
+  #latest-rotator {
+    overflow:hidden;
+  }
 }
 
 /* Large desktop */
