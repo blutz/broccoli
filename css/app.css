@@ -762,6 +762,15 @@ a > .wp-post-image:hover {
 	display:block;
 }	
 
+.field-wrap.list-radio-wrap ul, .field-wrap.list-checkbox-wrap ul {
+	clear:both;
+}
+
+.field-wrap.list-radio-wrap ul li, .field-wrap.list-checkbox-wrap ul li {
+	display:block;
+	float:left;
+	clear:both;
+}
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
