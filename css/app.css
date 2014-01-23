@@ -762,6 +762,12 @@ a > .wp-post-image:hover {
 	display:block;
 }	
 
+ul.blocky li {
+	display:block;
+	float:left;
+	clear:both;
+}
+
 /* =============================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
