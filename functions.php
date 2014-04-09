@@ -29,6 +29,7 @@ function roots_setup() {
     'front_buttons' => __('Front Buttons', 'cpo'),
     'sioc_projects' => __('SIOC Navigation', 'cpo'),
     'src_projects' => __('SRC Navigation', 'cpo'),
+    'fitted' => __('[FITTED] Navigation', 'cpo'),
     'cposa_education_projects' => __('CPOSA Education Navigation', 'cpo'),
     'cposa_health_projects' => __('CPOSA Health Navigation', 'cpo'),
     'cposa_justice_projects' => __('CPOSA Social Justice Navigation', 'cpo'),

@@ -47,6 +47,7 @@
 			   <li class="active"><a href="#access" data-toggle="tab">Access/Outreach</a></li>
 			   <li><a href="#retention" data-toggle="tab">Retention</a></li>
 			   <li><a href="#service" data-toggle="tab">Service</a></li>
+			   <li><a href="#fitted" data-toggle="tab">Wellness</a></li>
 			   <li><a href="#risk" data-toggle="tab">Risk management</a></li>
 			</ul>
 			<div class="tab-content">
@@ -99,6 +100,16 @@
 
 					</ul>
 					<?php dynamic_sidebar('cposa'); ?>
+				</div>
+				<div class="tab-pane" id="fitted">
+					<h2>Fitness Improvement Training through Exercise and Diet</h2>
+					<?php wp_nav_menu(array(
+						'theme_location' => 'fitted',
+						'container' => '',
+						'items_wrap' => '<ul id="fitted-projectlist" class="projectlist %2$s">%3$s</ul>',
+						'menu_class' => ''				
+					)); ?>
+					<?php dynamic_sidebar('fitted'); ?>
 				</div>
 				<div class="tab-pane" id="risk">
 					<h2>Managing risk while helping our communities</h2>

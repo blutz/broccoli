@@ -41,6 +41,15 @@ function cpoWidgets() {
 		'after_title' => ''		
 	));
 	register_sidebar(array(
+		'name' => __( 'Wellness ([FITTED])' ),
+		'id' => 'cposa',
+		'description' => __( 'Info about [FITTED] goes here' ),
+		'before_widget' => '<p>',
+		'after_widget' => '</p>',
+		'before_title' => '',
+		'after_title' => ''		
+	));
+	register_sidebar(array(
 		'name' => __( 'Risk management (SREC)' ),
 		'id' => 'srec',
 		'description' => __( 'Info about SREC goes here' ),
