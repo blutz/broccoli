@@ -42,7 +42,7 @@ function cpoWidgets() {
 	));
 	register_sidebar(array(
 		'name' => __( 'Wellness ([FITTED])' ),
-		'id' => 'cposa',
+		'id' => 'fitted',
 		'description' => __( 'Info about [FITTED] goes here' ),
 		'before_widget' => '<p>',
 		'after_widget' => '</p>',
