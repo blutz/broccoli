@@ -27,7 +27,7 @@ function roots_setup() {
   register_nav_menus(array(
     'top_navigation' => __('Top Navigation', 'cpo'),
     'front_buttons' => __('Front Buttons', 'cpo'),
-    'siac_projects' => __('SIAC Navigation', 'cpo'),
+    'sioc_projects' => __('SIOC Navigation', 'cpo'),
     'src_projects' => __('SRC Navigation', 'cpo'),
     'cposa_education_projects' => __('CPOSA Education Navigation', 'cpo'),
     'cposa_health_projects' => __('CPOSA Health Navigation', 'cpo'),

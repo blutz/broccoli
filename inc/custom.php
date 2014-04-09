@@ -14,9 +14,9 @@ function cpoWidgets() {
 	
 	// Register access sidebar
 	register_sidebar(array(
-		'name' => __( 'Access (SIAC)' ),
-		'id' => 'siac',
-		'description' => __( 'Info about SIAC goes here' ),
+		'name' => __( 'Access/Outreach (SIOC)' ),
+		'id' => 'sioc',
+		'description' => __( 'Info about SIOC goes here' ),
 		'before_widget' => '<p>',
 		'after_widget' => '</p>',
 		'before_title' => '',

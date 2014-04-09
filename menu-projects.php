@@ -49,11 +49,11 @@
 								'menu_class' => ''				
 							)); ?>
 	    				</li>
-	    				<li><a href="#" data-toggle="collapse" data-target="#menu-siac">Access/Outreach (SIAC) <i class="icon-chevron-down"></i></a>
+	    				<li><a href="#" data-toggle="collapse" data-target="#menu-sioc">Access/Outreach (SIOC) <i class="icon-chevron-down"></i></a>
 			    			<?php wp_nav_menu(array(
-								'theme_location' => 'siac_projects',
+								'theme_location' => 'sioc_projects',
 								'container' => '',
-								'items_wrap' => '<ul id="menu-siac" class="collapse %2$s">%3$s</ul>',
+								'items_wrap' => '<ul id="menu-sioc" class="collapse %2$s">%3$s</ul>',
 								'menu_class' => ''				
 							)); ?>
 	    				</li>

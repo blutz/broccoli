@@ -44,7 +44,7 @@
 
 		<div id="pagebody-main-tabs">
 			<ul class="nav nav-tabs">
-			   <li class="active"><a href="#access" data-toggle="tab">Access</a></li>
+			   <li class="active"><a href="#access" data-toggle="tab">Access/Outreach</a></li>
 			   <li><a href="#retention" data-toggle="tab">Retention</a></li>
 			   <li><a href="#service" data-toggle="tab">Service</a></li>
 			   <li><a href="#risk" data-toggle="tab">Risk management</a></li>
@@ -54,13 +54,13 @@
 					<h2>Getting students to college</h2>
 					<button class="btn-main btn-collapse visible-phone" data-toggle="collapse" data-target=".access-collapse">View all access projects <b class="caret"></b></button>
 					<?php wp_nav_menu(array(
-						'theme_location' => 'siac_projects',
+						'theme_location' => 'sioc_projects',
 						'container' => '',
 						'items_wrap' => '<ul id="access-projectlist" class="projectlist %2$s">%3$s</ul>',
 						'menu_class' => ''				
 					)); ?>
 	
-					<?php dynamic_sidebar('siac'); ?>
+					<?php dynamic_sidebar('sioc'); ?>
 				</div><!-- end div.tab-pane#access -->
 				<div class="tab-pane" id="retention">
 					<h2>Helping students graduate</h2>
